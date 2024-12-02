@@ -46,7 +46,7 @@
           <mxGeometry x="320" y="310" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="5lXewHu09b0JiVp-f4D7-3" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.cell_phone;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="414" y="400" width="25" height="60" as="geometry" />
+          <mxGeometry x="420" y="30" width="45.83" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
