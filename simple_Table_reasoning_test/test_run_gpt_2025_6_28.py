@@ -1,0 +1,156 @@
+import os
+import time
+import json
+import pandas as pd
+from transformers import AutoTokenizer
+import tiktoken
+import argparse
+from generation.generator_gpt_2 import Generator  # 你的核心生成器类
+
+# 模拟命令行参数结构（你也可以用 argparse 传）
+parser = argparse.ArgumentParser()
+
+    
+parser.add_argument('--dataset', type=str, default='wikitq',
+                        choices=['wikitq', 'tab_fact', 'fetaqa'])
+parser.add_argument('--dataset_split', type=str, default='test', choices=['train', 'validation', 'test'])
+parser.add_argument('--api_keys_file', type=str, default='key.txt')
+parser.add_argument('--prompt_file', type=str, default='./prompts/col_select_sql.txt')
+parser.add_argument('--save_dir', type=str, default='results/model_gpt')
+
+# Multiprocess options
+parser.add_argument('--n_processes', type=int, default=1)
+
+# Program generation options
+parser.add_argument('--prompt_style', type=str, default='create_table_select_full_table',
+                    choices=['create_table_select_3_full_table',
+                            'create_table_select_full_table',
+                            'create_table_select_3',
+                            'create_table',
+                            'text_full_table',
+                            'transpose',
+                            'no_table'])
+parser.add_argument('--generate_type', type=str, default='col',
+                    choices=['col', 'answer', 'row', 'verification'])
+parser.add_argument('--n_shots', type=int, default=8)
+parser.add_argument('--seed', type=int, default=42)
+
+# LLM options
+parser.add_argument('--engine', type=str, default="Qwen/Qwen2.5-7B-Instruct")
+parser.add_argument('--n_parallel_prompts', type=int, default=1)
+parser.add_argument('--max_generation_tokens', type=int, default=2000)
+parser.add_argument('--max_api_total_tokens', type=int, default=180000)
+parser.add_argument('--temperature', type=float, default=0.4)
+parser.add_argument('--sampling_n', type=int, default=1)
+parser.add_argument('--top_p', type=float, default=1.0)
+parser.add_argument('--stop_tokens', type=str, default='\n\n',
+                    help='Split stop tokens by ||')
+# debug options
+parser.add_argument('-v', '--verbose', action='store_false')
+
+args = parser.parse_args()
+
+args.dataset_path = f'./datasets/data/fetaQA-v1_test.json'
+
+
+# ==== 加载表格数据（JSON） ====
+with open(args.dataset_path, 'r') as f:
+    dataset = json.load(f)
+
+# ==== 加载 API keys ====
+with open(args.api_keys_file, 'r') as f:
+    keys = [line.strip() for line in f if line.strip()]
+
+# ==== 初始化 Generator 和 Tokenizer ====
+generator = Generator(args, keys=keys)
+
+tokenizer = tiktoken.get_encoding("cl100k_base")
+if generator and tokenizer:
+    print(f"✓ 成功初始化生成器和分词器")
+else:
+    print("❌ 生成器或分词器初始化失败，请检查配置")
+
+
+# ==== 选择一个样本进行测试 ====
+eid = 0
+g_data_item = dataset["data"][eid]
+print(f"[Testing eid={eid}] id={g_data_item['feta_id']}")
+
+table_array = g_data_item["table_array"]
+
+if len(table_array) < 2:
+    raise ValueError("表格数据不足，无法构建 DataFrame")
+
+# 如果第二行和第一行之间高度相似（即表头结构多余），就选第二行为列名
+def is_header_row(row):
+    return all(isinstance(cell, str) for cell in row)
+
+if len(table_array) >= 3 and is_header_row(table_array[0]) and is_header_row(table_array[1]):
+    header = table_array[1]
+    data = table_array[2:]
+else:
+    header = table_array[0]
+    data = table_array[1:]
+
+df = pd.DataFrame(data, columns=header)
+
+# 存入 g_data_item['table']
+g_data_item['table'] = df
+
+
+
+
+
+# 设置表格标题字段（如果有）
+g_data_item['table_page_title'] = g_data_item.get('table_page_title', 'Untitled Table')
+
+# ==== 构造 prompt ====
+few_shot_prompt = generator.build_few_shot_prompt_from_file(
+    file_path=args.prompt_file,
+    n_shots=args.n_shots
+)
+generate_prompt = generator.build_generate_prompt(
+    data_item=g_data_item,
+    generate_type=(args.generate_type,)
+)
+prompt = few_shot_prompt + "\n\n" + generate_prompt
+
+# ==== 控制 token 长度（如过长，裁剪表格行数）====
+max_prompt_tokens = args.max_api_total_tokens - args.max_generation_tokens
+
+if len(tokenizer.encode(prompt)) >= max_prompt_tokens:
+    generate_prompt = generator.build_generate_prompt(
+        data_item=g_data_item,
+        generate_type=(args.generate_type,),
+        num_rows=5  # 裁剪为5行
+    )
+    prompt = few_shot_prompt + "\n\n" + generate_prompt
+
+# res=generator.generate_one_pass(prompts=[(0, "What is 2+2?")], verbose=True)
+# breakpoint()
+# ==== 调用大模型 ====
+print(">> 调用大模型生成中...")
+start_time = time.time()
+response_dict = generator.generate_one_pass(
+    prompts=[(eid, prompt)],
+    verbose=args.verbose
+)
+print(f">> 耗时：{time.time() - start_time:.2f} 秒")
+
+# ==== 打印/保存结果 ====
+response = response_dict.get(eid, [])
+breakpoint()
+
+
+
+
+
+for i, (text, _, score) in enumerate(response):
+    print(f"\n[回答 {i + 1}] score={score:.4f}\n{text}")
+
+# 可选保存
+os.makedirs(args.save_dir, exist_ok=True)
+with open(os.path.join(args.save_dir, f"{args.dataset}_{args.dataset_split}_test_result.json"), 'w') as f:
+    json.dump({eid: response}, f, indent=2)
+
+print(">> 测试完成")
