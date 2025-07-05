@@ -5,9 +5,8 @@ import pandas as pd
 from transformers import AutoTokenizer
 import tiktoken
 import argparse
-from generation.generator_gpt_2 import Generator  # 你的核心生成器类
+from generation.generator_gpt_2 import Generator  # 核心生成器类
 
-# 模拟命令行参数结构（你也可以用 argparse 传）
 parser = argparse.ArgumentParser()
 
 
@@ -49,7 +48,7 @@ parser.add_argument("--n_shots", type=int, default=8)
 parser.add_argument("--seed", type=int, default=42)
 
 # LLM options
-parser.add_argument("--engine", type=str, default="Qwen/Qwen2.5-7B-Instruct")
+parser.add_argument("--engine", type=str, default="Qwen/Qwen2.5-VL-32B-Instruct")#Qwen/Qwen2.5-7B-Instruct
 parser.add_argument("--n_parallel_prompts", type=int, default=1)
 parser.add_argument("--max_generation_tokens", type=int, default=2000)
 parser.add_argument("--max_api_total_tokens", type=int, default=180000)
@@ -125,7 +124,7 @@ g_data_item["table_page_title"] = g_data_item.get("table_page_title", "Untitled 
 few_shot_prompt = generator.build_few_shot_prompt_from_file(
     file_path=args.prompt_file, n_shots=args.n_shots
 )
-generate_prompt = generator.build_generate_prompt(
+generate_prompt = generator.build_generate_prompt(#针对要进行问答的表格构建提示
     data_item=g_data_item, generate_type=(args.generate_type,)
 )
 prompt = few_shot_prompt + "\n\n" + generate_prompt

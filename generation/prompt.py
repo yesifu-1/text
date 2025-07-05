@@ -228,13 +228,13 @@ class PromptBuilder(object):
                 df=table,
                 num_rows=num_rows,
                 few_shot_demonstration=False
-            )
+            )#把表格的前num_rows行加入进prompt，并且补充说你表头是哪些
             else:
                 generate_prompt += self._select_x_prompt(
                     df=table,
                     num_rows=table.shape[0],
                     few_shot_demonstration=False
-                )
+                )##把整张表格加入进prompt，并且补充说你表头是哪些
 
         elif self.prompt_style in ['text_full_table', 'transpose']:
             if 'num_rows' in kwargs.keys():
