@@ -197,7 +197,9 @@ class Generator(object):
                         )
                         
                         choices += re["choices"]
-
+                        
+                    
+    
                     result = {"choices": choices}
                     print("Openai api inference time:", time.time() - start_time)
                     return result
@@ -219,6 +221,7 @@ class Generator(object):
                             logprobs=1,
                         )
                         choices += re["choices"]
+                        breakpoint()
                     result = {"choices": choices}
                     print("Openai api inference time:", time.time() - start_time)
                     return result

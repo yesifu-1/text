@@ -6,7 +6,7 @@ from transformers import AutoTokenizer
 import tiktoken
 import argparse
 from generation.generator_gpt_2 import Generator  # 核心生成器类
-
+import copy
 parser = argparse.ArgumentParser()
 
 
@@ -48,7 +48,7 @@ parser.add_argument("--n_shots", type=int, default=8)
 parser.add_argument("--seed", type=int, default=42)
 
 # LLM options
-parser.add_argument("--engine", type=str, default="Qwen/Qwen2.5-VL-32B-Instruct")#Qwen/Qwen2.5-7B-Instruct
+parser.add_argument("--engine", type=str, default="Qwen/Qwen2.5-VL-32B-Instruct")#Qwen/Qwen2.5-7B-Instruct#Qwen/Qwen2.5-VL-32B-Instruct
 parser.add_argument("--n_parallel_prompts", type=int, default=1)
 parser.add_argument("--max_generation_tokens", type=int, default=2000)
 parser.add_argument("--max_api_total_tokens", type=int, default=180000)
@@ -88,6 +88,13 @@ else:
 eid = 0
 g_data_item = dataset["data"][eid]
 print(f"[Testing eid={eid}] id={g_data_item['feta_id']}")
+
+#================================================
+#保存原始数据副本
+ori_data_item=copy.deepcopy(g_data_item)
+
+#================================================
+
 
 table_array = g_data_item["table_array"]
 
@@ -146,16 +153,22 @@ if len(tokenizer.encode(prompt)) >= max_prompt_tokens:
 print(">> 调用大模型生成中...")
 start_time = time.time()
 response_dict = generator.generate_one_pass(
-    prompts=[(eid, prompt)], verbose=args.verbose
+    prompts=[(eid, prompt),(eid+1,prompt)], verbose=args.verbose
 )
 print(f">> 耗时：{time.time() - start_time:.2f} 秒")
-breakpoint()
+
 # ==== 打印/保存结果 ====
-response = response_dict.get(eid, [])
+response=[]
 
+for (i,res) in response_dict.items():
+    response.extend(res)
 
-for i, (text, _, score) in enumerate(response):
-    print(f"\n[回答 {i + 1}] score={score:.4f}\n{text}")
+g_dict=dict()
+g_dict[eid] = set()
+g_dict[eid]={'ori_data_item':ori_data_item,'generations':response}
+
+for i, text in enumerate(response):
+    print(f"\n[回答 {i + 1}] : {text}\n")
 
 # 可选保存
 os.makedirs(args.save_dir, exist_ok=True)
@@ -165,6 +178,6 @@ with open(
     ),
     "w",
 ) as f:
-    json.dump({eid: response}, f, indent=2)
+    json.dump(g_dict, f, indent=2)
 
 print(">> 测试完成")
