@@ -91,7 +91,7 @@ print(f"[Testing eid={eid}] id={g_data_item['feta_id']}")
 
 #================================================
 #保存原始数据副本
-ori_data_item=copy.deepcopy(g_data_item)
+# ori_data_item=copy.deepcopy(g_data_item)
 
 #================================================
 
@@ -113,26 +113,42 @@ if (
     and is_header_row(table_array[1])
 ):
     header = table_array[1]
-    data = table_array[2:]
+    rows = table_array[2:]
 else:
     header = table_array[0]
-    data = table_array[1:]
+    rows = table_array[1:]
 
-df = pd.DataFrame(data, columns=header)#把列表形式表示的表格数据转换为 DataFrame
 
-# 存入 g_data_item['table']（替换掉了原来的列表）
+df = pd.DataFrame(rows, columns=header)#把列表形式表示的表格数据转换为 DataFrame
+data_to_llm=copy.deepcopy(g_data_item)#深拷贝以后，原始的表格可以任意修改，不会影响传入给llm的表格数据
+test_data_to_result=copy.deepcopy(g_data_item)
+data_to_result= {
+                "id": test_data_to_result['feta_id'],
+                "table": {
+                    "id": test_data_to_result['feta_id'],
+                    "header": header,
+                    "rows": rows,
+                    "page_title":  test_data_to_result['table_page_title'],
+                },
+                "question": test_data_to_result['question'],
+                "answer": test_data_to_result['answer']
+                }
+# data_to_result=
+breakpoint()
+data_to_llm["table"] = df
+
 g_data_item["table"] = df
 
 
 # 设置表格标题字段（如果有）
-g_data_item["table_page_title"] = g_data_item.get("table_page_title", "Untitled Table")
+data_to_llm["table_page_title"] = data_to_llm.get("table_page_title", "Untitled Table")
 
 # ==== 构造 prompt ====
 few_shot_prompt = generator.build_few_shot_prompt_from_file(
     file_path=args.prompt_file, n_shots=args.n_shots
 )
 generate_prompt = generator.build_generate_prompt(#针对要进行问答的表格构建提示
-    data_item=g_data_item, generate_type=(args.generate_type,)
+    data_item=data_to_llm, generate_type=(args.generate_type,)
 )
 prompt = few_shot_prompt + "\n\n" + generate_prompt
 
@@ -165,7 +181,7 @@ for (i,res) in response_dict.items():
 
 g_dict=dict()
 g_dict[eid] = set()
-g_dict[eid]={'ori_data_item':ori_data_item,'generations':response}
+g_dict[eid]={'ori_data_item':data_to_result,'generations':response}
 
 for i, text in enumerate(response):
     print(f"\n[回答 {i + 1}] : {text}\n")
