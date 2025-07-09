@@ -129,6 +129,7 @@ for eid, _ in data.items():
         except:
             pass
     pred_col = list(set().union(*pred_cols))
+    breakpoint()
     g_data_item = col_dict[str(g_eid)]['data_item']
    
     g_dict[g_eid] = {
@@ -207,7 +208,7 @@ for eid, _ in data.items():
     os.makedirs(args.save_dir, exist_ok=True)
     with open(
         os.path.join(
-            args.save_dir, f"{args.dataset}_col_text.json"
+            args.save_dir, f"{args.dataset}_col_text1.json"
         ),
         "w",
     ) as f:
