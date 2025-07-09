@@ -1,0 +1,199 @@
+{
+  "0": {
+    "generations": [
+      "1. Plan:\n   a. Identify the rows where the 'Album' column contains the value 'Across the Rio Grande'.\n   b. Filter these rows to only include those from the year 1988.\n   c. Extract the 'Single' column from the filtered rows to determine the singles included in the album.\n2. Retrieval:\n   Explanation: The question asks for the singles included in the album 'Across the Rio Grande' in the year 1988. To answer this, we need to filter the rows based on the 'Album' column for 'Across the Rio Grande' and then further filter by the 'Year' column for 1988. The 'Single' column will provide the specific singles included in the album during that year.\n   Evidence: f_col([Year, Single, Album])",
+      "1. Plan:\n   a. Filter rows where the 'Album' column is 'Across the Rio Grande'.\n   b. Ensure the filtered rows also match the year 1988.\n   c. The 'Single' column contains the names of the singles, which is the relevant information for the question.\n2. Retrieval:\n   Explanation: The question asks for singles included in the album 'Across the Rio Grande' in 1988. To answer this, we need to look at the 'Album' column to identify relevant rows and then filter by the year 1988. The 'Single' column will provide the names of the singles.\n   Evidence: f_col(['Year', 'Single', 'Album'])"
+    ],
+    "cols": [
+      "Album",
+      "Single",
+      "Year"
+    ],
+    "ori_data_item": {
+      "id": 12322,
+      "table": {
+        "id": 12322,
+        "header": [
+          "Year",
+          "Single",
+          "US Country",
+          "CAN Country",
+          "Album"
+        ],
+        "rows": [
+          [
+            "1985",
+            "\"Playing for Keeps\"",
+            "62",
+            "\u2014",
+            "N/A"
+          ],
+          [
+            "1985",
+            "\"My Heart Holds On\"",
+            "64",
+            "\u2014",
+            "Holly Dunn"
+          ],
+          [
+            "1986",
+            "\"Two Too Many\"",
+            "39",
+            "\u2014",
+            "Holly Dunn"
+          ],
+          [
+            "1986",
+            "\"Daddy's Hands\"",
+            "7",
+            "\u2014",
+            "Holly Dunn"
+          ],
+          [
+            "1987",
+            "\"Love Someone Like Me\"",
+            "2",
+            "2",
+            "Cornerstone"
+          ],
+          [
+            "1987",
+            "\"Only When I Love\"",
+            "4",
+            "7",
+            "Cornerstone"
+          ],
+          [
+            "1988",
+            "\"Strangers Again\"",
+            "7",
+            "36",
+            "Cornerstone"
+          ],
+          [
+            "1988",
+            "\"That's What Your Love Does to Me\"",
+            "5",
+            "6",
+            "Across the Rio Grande"
+          ],
+          [
+            "1988",
+            "\"(It's Always Gonna Be) Someday\"",
+            "11",
+            "N/A",
+            "Across the Rio Grande"
+          ],
+          [
+            "1989",
+            "\"Are You Ever Gonna Love Me\"",
+            "1",
+            "6",
+            "The Blue Rose of Texas"
+          ],
+          [
+            "1989",
+            "\"There Goes My Heart Again\"",
+            "4",
+            "8",
+            "The Blue Rose of Texas"
+          ],
+          [
+            "1990",
+            "\"My Anniversary for Being a Fool\"",
+            "63",
+            "75",
+            "Heart Full of Love"
+          ],
+          [
+            "1990",
+            "\"You Really Had Me Going\"",
+            "1",
+            "1",
+            "Heart Full of Love"
+          ],
+          [
+            "1991",
+            "\"Heart Full of Love\"",
+            "19",
+            "12",
+            "Heart Full of Love"
+          ],
+          [
+            "1991",
+            "\"Maybe I Mean Yes\"",
+            "48",
+            "45",
+            "Milestones: Greatest Hits"
+          ],
+          [
+            "1991",
+            "\"No One Takes the Train Anymore\"",
+            "\u2014",
+            "\u2014",
+            "Milestones: Greatest Hits"
+          ],
+          [
+            "1992",
+            "\"No Love Have I\"",
+            "67",
+            "\u2014",
+            "Getting It Dunn"
+          ],
+          [
+            "1992",
+            "\"As Long as You Belong to Me\"",
+            "68",
+            "\u2014",
+            "Getting It Dunn"
+          ],
+          [
+            "1992",
+            "\"Golden Years\"",
+            "51",
+            "62",
+            "Getting It Dunn"
+          ],
+          [
+            "1995",
+            "\"I Am Who I Am\"",
+            "56",
+            "56",
+            "Life and Love and All the Stages"
+          ],
+          [
+            "1995",
+            "\"Cowboys Are My Weakness\"",
+            "\u2014",
+            "\u2014",
+            "Life and Love and All the Stages"
+          ],
+          [
+            "1995",
+            "\"It's Not About Blame\"",
+            "\u2014",
+            "\u2014",
+            "Life and Love and All the Stages"
+          ],
+          [
+            "1997",
+            "\"Leave One Bridge Standing\"",
+            "\u2014",
+            "\u2014",
+            "Leave One Bridge Standing"
+          ],
+          [
+            "\"\u2014\" denotes releases that did not chart",
+            "\"\u2014\" denotes releases that did not chart",
+            "\"\u2014\" denotes releases that did not chart",
+            "\"\u2014\" denotes releases that did not chart",
+            "\"\u2014\" denotes releases that did not chart"
+          ]
+        ],
+        "page_title": "Holly Dunn"
+      },
+      "question": "What singles were Included in Across the Rio Grande in 1988?",
+      "answer": "Across the Rio Grande in 1988 included the singles \"That's What Your Love Does to Me\" and \"(It's Always Gonna Be) Someday\"."
+    }
+  }
+}

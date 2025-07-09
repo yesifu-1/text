@@ -11,7 +11,7 @@ parser = argparse.ArgumentParser()
 
 
 parser.add_argument(
-    "--dataset", type=str, default="wikitq", choices=["wikitq", "tab_fact", "fetaqa"]
+    "--dataset", type=str, default="fetaqa", choices=["wikitq", "tab_fact", "fetaqa"]
 )
 parser.add_argument(
     "--dataset_split", type=str, default="test", choices=["train", "validation", "test"]
@@ -134,7 +134,7 @@ data_to_result= {
                 "answer": test_data_to_result['answer']
                 }
 # data_to_result=
-breakpoint()
+
 data_to_llm["table"] = df
 
 g_data_item["table"] = df
@@ -181,6 +181,7 @@ for (i,res) in response_dict.items():
 
 g_dict=dict()
 g_dict[eid] = set()
+
 g_dict[eid]={'ori_data_item':data_to_result,'generations':response}
 
 for i, text in enumerate(response):
@@ -190,7 +191,7 @@ for i, text in enumerate(response):
 os.makedirs(args.save_dir, exist_ok=True)
 with open(
     os.path.join(
-        args.save_dir, f"{args.dataset}_{args.dataset_split}_test_result.json"
+        args.save_dir, f"{args.dataset}_col_sql.json"
     ),
     "w",
 ) as f:
