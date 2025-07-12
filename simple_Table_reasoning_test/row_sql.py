@@ -265,7 +265,7 @@ for eid, g_pairs in response_dict.items():
         # (找到)['John', 'USA', '2020', 'Mary', 'UK', '2021']这种的单个样本
 
         exec_answer = executor.sql_exec(norm_sql, db, verbose=False)
-
+        
         # exec_rows返回的是['row 1', 'row 2', 'row 3']这样的
 
         exec_rows = extract_rows(exec_answer)
