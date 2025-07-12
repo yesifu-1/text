@@ -1,13 +1,13 @@
 {
   "0": {
     "generations": [
-      "1. Plan:\n   a. Identify the rows where the 'Album' column contains the value 'Across the Rio Grande'.\n   b. Filter these rows to only include those from the year 1988.\n   c. Extract the 'Single' column from the filtered rows to determine the singles included in the album.\n2. Retrieval:\n   Explanation: The question asks for the singles included in the album 'Across the Rio Grande' in the year 1988. To answer this, we need to filter the rows based on the 'Album' column for 'Across the Rio Grande' and then further filter by the 'Year' column for 1988. The 'Single' column will provide the specific singles included in the album during that year.\n   Evidence: f_col([Year, Single, Album])",
-      "1. Plan:\n   a. Filter rows where the 'Album' column is 'Across the Rio Grande'.\n   b. Ensure the filtered rows also match the year 1988.\n   c. The 'Single' column contains the names of the singles, which is the relevant information for the question.\n2. Retrieval:\n   Explanation: The question asks for singles included in the album 'Across the Rio Grande' in 1988. To answer this, we need to look at the 'Album' column to identify relevant rows and then filter by the year 1988. The 'Single' column will provide the names of the singles.\n   Evidence: f_col(['Year', 'Single', 'Album'])"
+      "1. Plan:\n   a. Extract the rows where the 'Album' column has the value 'Across the Rio Grande'.\n   b. Filter these rows to include only those with the 'Year' column value of 1988.\n   c. The 'Single' column contains the names of the singles, which are relevant to the question.\n2. Retrieval:\n   Explanation: To answer the question, we need to focus on the 'Album' column to identify the rows corresponding to 'Across the Rio Grande'. Additionally, we need to ensure that the 'Year' column specifies 1988. The 'Single' column will then provide the names of the singles included in that album for the given year.\n   Evidence: f_col([Year, Single, Album])",
+      "1. Plan:\n   a. Identify the rows where the 'Album' column contains \"Across the Rio Grande\".\n   b. Filter the rows to include only those from the year 1988.\n   c. Extract the 'Single' column from the filtered rows to answer the question.\n2. Retrieval:\n   Explanation: The 'Album' column is essential to identify the album \"Across the Rio Grande\". The 'Year' column is used to filter for the year 1988. The 'Single' column contains the names of the singles, which are the relevant pieces of information for answering the question.\n   Evidence: f_col([Year, Album, Single])"
     ],
     "cols": [
-      "Album",
       "Single",
-      "Year"
+      "Year",
+      "Album"
     ],
     "ori_data_item": {
       "id": 12322,

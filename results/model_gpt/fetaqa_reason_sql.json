@@ -1,7 +1,7 @@
 {
   "0": {
     "generations": [
-      "Final Output:\nThis question involves filtering the rows based on the album and year. Since this does not involve any mathematical operations, we can directly extract the required information using a simple SQL query.\n - Step 1: Filter the rows where the album is 'across the rio grande' and the year is '1988'.\n   SELECT single FROM w WHERE album = 'across the rio grande' AND year = '1988';\nSQL: SELECT single FROM w WHERE album = 'across the rio grande' AND year = '1988';"
+      "Final Output:\nWe need to filter the rows where the album is 'across the rio grande' and the year is 1988, and then extract the singles.\n - Step 1: Filter the rows where the album is 'across the rio grande' and the year is 1988.\n   SELECT single FROM w WHERE album = 'across the rio grande' AND year = '1988';\nSQL: SELECT single FROM w WHERE album = 'across the rio grande' AND year = '1988';"
     ],
     "cols": [
       "row_id",
@@ -10,8 +10,8 @@
       "album"
     ],
     "rows": [
-      "8",
-      "7"
+      "7",
+      "8"
     ],
     "ori_data_item": {
       "id": 12322,

@@ -99,7 +99,7 @@ for eid, _ in data.items():
         rows = []
         cols = []
     row_col_dict[eid] = {'rows': rows, 'cols': cols, 'output' : output, 'data_item' : data_item}
-breakpoint()
+
     #============进入处理逻辑========================
 g_eid = 0  # 注意 手动test
 g_dict = dict()
@@ -135,7 +135,7 @@ try:
 
     if [row_col[str(g_eid)]['cols']] != []:
         df = tab[filtered_cols]
-    breakpoint()
+
 
     ### Filter rows ###
     if row_col[str(g_eid)]['rows'] == []:
@@ -143,7 +143,7 @@ try:
         row_unique = set(row_list)
         row_list = list(row_unique)
         df = df[df.index.isin([eval(i) for i in row_list])]
-        breakpoint()
+
     else:
         row_list = [str(pattern_row_num.search(x).group()) for x in row_col[str(g_eid)]['rows'] if pattern_row_num.search(x)]
         row_unique = set(row_list)
@@ -153,7 +153,7 @@ try:
             if any(index >= len(df) for index in indices):
                 raise IndexError("Index out of bounds")
             df = df[df.index.isin(indices)]
-            breakpoint()
+          
         except IndexError:
             df = df
         

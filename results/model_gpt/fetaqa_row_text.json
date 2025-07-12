@@ -1,7 +1,7 @@
 {
   "0": {
     "generations": [
-      "Output:\n1. Assessment:\n  - We need to find the singles that were included in the album \"Across the Rio Grande\" in 1988.\n  - The table has rows for singles and their corresponding albums and years.\n2. Feedback:\n  - Are the rows for \"Across the Rio Grande\" in 1988 included in the response? A: Yes; row 7 and row 8 are correct.\n  - Are there any other singles in 1988 for the album \"Across the Rio Grande\" that are not included in the response? A: No; there are no other singles in 1988 for this album.\nRows: f_row([row 7, row 8])"
+      "Output:\n1. Assessment:\n  - We need to find the singles that were included in the album \"Across the Rio Grande\" in 1988.\n  - The table contains information about singles and their corresponding albums and years.\n2. Feedback:\n  - Are the singles from the album \"Across the Rio Grande\" in 1988 included in the response? A: Yes; row 7 (\"that's what your love does to me\") and row 8 (\"(it's always gonna be) someday\") are correct.\n  - Are there any other singles from the album \"Across the Rio Grande\" in 1988 that are not included in the response? A: No; there are no other singles from this album and year in the table.\nRows: f_row([row 7, row 8])"
     ],
     "cols": [
       "row_id",

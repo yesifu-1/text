@@ -1,7 +1,7 @@
 {
   "0": {
     "generations": [
-      "Take a deep breath and think step by step\n1. Decompose:\n   - Part 1: Find all singles from the album \"Across the Rio Grande\" in 1988\n     Response 1: SELECT single FROM w WHERE album = 'across the rio grande' AND year = '1988';\n2. Retrieval:\n   # Use 'OR' to combine the conditions from #1\n   SQL: SELECT single FROM w WHERE album = 'across the rio grande' AND year = '1988'; f_row(['row 7', 'row 8'])"
+      "Take a deep breath and work step by step\n1. Decompose:\n   - Part 1: Find all singles from the album \"Across the Rio Grande\" in 1988\n     Response 1: SELECT single FROM w WHERE album = 'across the rio grande' AND year = '1988';\n2. Retrieval:\n   # Use 'OR' to combine the conditions from #1\n   SQL: SELECT single FROM w WHERE album = 'across the rio grande' AND year = '1988'; f_row(['row 7', 'row 8'])"
     ],
     "cols": [
       "row_id",

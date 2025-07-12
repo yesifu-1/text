@@ -229,7 +229,7 @@ with open(os.path.join(args.save_dir, args.input_program_file), 'r') as f:
             
 
             print(f"Process#0: Prompts ready with {len(built_few_shot_prompts)} parallels. Run openai API.")
-            breakpoint()
+            
             start_time=time.time()
             response_dict = generator.generate_one_pass(
                 prompts=built_few_shot_prompts,
