@@ -1,0 +1,31 @@
+Station,Distance (km),Distance (km),-,Transfers/ Notes,Location,Location
+Station,From previous station,From Jakarta Termini,-,Transfers/ Notes,Location,Location
+Jakarta Kota,-,0.0,-,-,West Jakarta,Jakarta
+Jayakarta,1.4,1.4,-,-,West Jakarta,Jakarta
+Mangga Besar,1.0,3.4,-,-,West Jakarta,Jakarta
+Sawah Besar,1.1,4.5,-,-,Central Jakarta,Jakarta
+Juanda,0.7,5.2,-,TransJakarta Corridor 2 (K2-18 Juanda) TransJakarta Corridor 3 (K3-15 Juanda),Central Jakarta,Jakarta
+Gambir,-,-,Pass - through station,-,Central Jakarta,Jakarta
+Gondangdia,2.2,7.4,-,-,Central Jakarta,Jakarta
+Cikini,1.7,9.1,-,-,Central Jakarta,Jakarta
+Manggarai,1.6,10.7,-,-,South Jakarta,Jakarta
+Tebet,2.6,13.3,-,-,South Jakarta,Jakarta
+Cawang,1.3,14.6,-,TransJakarta Corridor 9 (K9-7 Cikoko Stasiun Cawang),South Jakarta,Jakarta
+Duren Kalibata,1.4,16.0,-,-,South Jakarta,Jakarta
+Pasar Minggu Baru,1.5,17.5,-,-,South Jakarta,Jakarta
+Pasar Minggu,1.7,19.2,-,-,South Jakarta,Jakarta
+Tanjung Barat,3.0,22.2,-,-,South Jakarta,Jakarta
+Lenteng Agung,2.4,24.8,-,-,South Jakarta,Jakarta
+Universitas Pancasila,1.0,25.8,-,-,South Jakarta,Jakarta
+Universitas Indonesia,2.2,28.0,-,-,Depok,West Java
+Pondok Cina,1.1,29.1,-,-,Depok,West Java
+Depok Baru,2.5,31.6,-,-,Depok,West Java
+1.7,33.3,-,Some services ends here,-,Depok,West Java
+Pondokterong,-,-,Non-active station,-,Depok,West Java
+Citayam/Pabuaran (new railway station),5.0,38.3,-,-,Bogor Regency,West Java
+Pabuaran (old railway station),-,-,Non-active station,-,Bogor Regency,West Java
+Susukan,-,-,Non-active station,-,Bogor Regency,West Java
+Bojong Gede,5.2,43.5,-,-,Bogor Regency,West Java
+Cilebut,4.3,47.8,-,-,Bogor Regency,West Java
+Kebonpedes,-,-,Non-active station,-,Bogor Regency,West Java
+Bogor,7.5,54.8,-,-,Bogor,West Java

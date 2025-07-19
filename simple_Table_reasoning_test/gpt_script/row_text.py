@@ -1,5 +1,5 @@
 #注意 这一步的generate_type是verification，为什么？？？
-
+# 注意 实际上除了第一步col_sql 其他时候都不用重新读取数据集
 import time
 import json
 import argparse

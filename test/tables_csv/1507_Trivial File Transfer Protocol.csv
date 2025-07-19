@@ -1,0 +1,12 @@
+RFC Number,Title,Published,Author,Obsolete and Update Information
+RFC 783,The TFTP Protocol (Revision 1),June 1981,K. Sollins,Obsoleted by - RFC 1350
+RFC 906,Bootstrap Loading using TFTP,June 1984,Ross Finlayson,-
+RFC 951,Bootstrap Protocol,Sep.1985,Bill Croft,"Updated by RFC 1395, RFC 1497, RFC 1532, RFC 1542, RFC 5494"
+RFC 1350,The TFTP Protocol (Revision 2),July 1992,K. Sollins,"Updated by RFC 1782, RFC 1783, RFC 1784, RFC 1785, RFC 2347, RFC 2348, RFC 2349"
+RFC 1782,TFTP Option Extension,March 1995,G. Malkin,Obsoleted by - RFC 2347
+RFC 2131,Dynamic Host Configuration Protocol,March 1997,R. Droms,"Updated by RFC 3396, RFC 4361, RFC 5494, RFC 6842"
+RFC 2347,TFTP Option Extension,May 1998,G. Malkin,-
+RFC 2348,TFTP Blocksize Option,May 1998,G. Malkin,-
+RFC 2349,TFTP Timeout Interval and Transfer Size Options,May 1998,G. Malkin,-
+RFC 5505,Principles of Internet Host Configuration,May 2009,B. Aboba,-
+RFC 7440,TFTP Windowsize Option,Jan 2015,P. Masotta,-

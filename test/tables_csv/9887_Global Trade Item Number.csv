@@ -1,0 +1,5 @@
+Name,Former names,Barcode symbologies
+"GTIN-14 (used for wholesale shipments, not retail point of sale)","EAN/UCC-14, SCC-14, DUN-14, UPC Case Code, UPC Shipping Container Code","GS1-128, GS1 Databar, ITF-14"
+GTIN-13,"EAN, EAN·UCC-13, JAN (subset)",EAN-13
+GTIN-12,"EAN·UCC-12, UCC-12","UPC-A, UPC-E (condensed to 6 digits)"
+GTIN-8,EAN/UCC-8,EAN-8

@@ -145,7 +145,7 @@ with open(os.path.join(args.save_dir, args.input_program_file), 'r') as f:
             all_preds = preds + [data[str(g_eid)]['rows']]
             pred = set().union(*all_preds)
             # pred = list(set().union(*preds, data[str(g_eid)]['rows']))
-            
+            breakpoint()
             g_data_item = data[str(g_eid)]['data_item']
             g_dict[g_eid] = {
                 'generations': [],
@@ -188,7 +188,7 @@ with open(os.path.join(args.save_dir, args.input_program_file), 'r') as f:
                         df = df[df.index.isin(indices)]
                     except IndexError:
                         df = df
-
+            
             if pred == [] or pred == [""]:
                 row_list = [str(j) for j in range(len(g_data_item['table']['rows']))]
                 row_unique = set(row_list)

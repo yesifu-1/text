@@ -1,0 +1,11 @@
+Engine,Power,Torque,Compression ratio,Bore x Stroke,Rod Length,Boost pressure
+B204i:,130 hp (97 kW) @ 5500 rpm,177 N⋅m (131 lb⋅ft) @ 4300 rpm,10.1:1,90 mm × 78 mm (3.54 in × 3.07 in),153 mm (6.0 in),NA
+B204E:,154 hp (115 kW) @ 5500 rpm,219 N⋅m (162 lb⋅ft) @ 3600 rpm,9.2:1,90 mm × 78 mm (3.54 in × 3.07 in),153 mm (6.0 in),0.4 bar (5.8 psi)
+B204L:,185 hp (138 kW) @ 5500 rpm,263 N⋅m (194 lb⋅ft) @ 2100 rpm,9.2:1,90 mm × 78 mm (3.54 in × 3.07 in),153 mm (6.0 in),0.73 bar (10.6 psi)
+B204R:,205 hp (153 kW) @ 5500 rpm,280 N⋅m (207 lb⋅ft) @ 2200 rpm,9.2:1,90 mm × 78 mm (3.54 in × 3.07 in),153 mm (6.0 in),1 bar (15 psi)
+B234i 1990-1993:,150 hp (112 kW) @ 5500 rpm,212 N⋅m (156 lb⋅ft) @ 3800 rpm,10.1:1,90 mm × 90 mm (3.54 in × 3.54 in),147 mm (5.8 in),NA
+B234i 1994-:,150 hp (112 kW) @ 5600 rpm,210 N⋅m (155 lb⋅ft) @ 4300 rpm,10.5:1,90 mm × 90 mm (3.54 in × 3.54 in),153 mm (6.0 in),NA
+B234E:,170 hp (127 kW) @ 5700 rpm,260 N⋅m (192 lb⋅ft) @ 2100 rpm,9.25:1,90 mm × 90 mm (3.54 in × 3.54 in),147 mm (5.8 in),0.55 bar (8.0 psi)
+B234L: 1990-1993,200 hp (149 kW) @ 5500 rpm,329 N⋅m (243 lb⋅ft) @ 1900 rpm 5MT,8.5:1,90 mm × 90 mm (3.54 in × 3.54 in),147 mm (5.8 in),0.81 bar (11.7 psi)
+B234L 1994-1998:,200 hp (149 kW) @ 5500 rpm,323 N⋅m (238 lb⋅ft) @ 1800 rpm 5MT,9.25:1,90 mm × 90 mm (3.54 in × 3.54 in),147 mm (5.8 in),0.81 bar (11.7 psi)
+B234R:,225 hp (168 kW) @ 5500 rpm,342 N⋅m (252 lb⋅ft) @ 1950 rpm,9.25:1,90 mm × 90 mm (3.54 in × 3.54 in),147 mm (5.8 in),1.08 bar (15.7 psi)

@@ -1,0 +1,9 @@
+Major key,Number of flats,Flat notes,Minor key,Enharmonic equivalent
+C major,0,-,A minor,None
+F major,1,B♭,D minor,None
+B♭ major,2,"B♭, E♭",G minor,None
+E♭ major,3,"B♭, E♭, A♭",C minor,None
+A♭ major,4,"B♭, E♭, A♭, D♭",F minor,None
+D♭ major,5,"B♭, E♭, A♭, D♭, G♭",B♭ minor,C♯ major/A♯ minor
+G♭ major,6,"B♭, E♭, A♭, D♭, G♭, C♭",E♭ minor,F♯ major/D♯ minor
+C♭ major,7,"B♭, E♭, A♭, D♭, G♭, C♭, F♭",A♭ minor,B major/G♯ minor

@@ -164,6 +164,7 @@ except:
 
 
 # pred = list(set().union(*preds,col_dict[str(g_eid)]['output']))
+# 对前两步(col_text和col_sql)找到的关键列名进行去重
 all_preds = preds + [col_dict[str(g_eid)]["output"]]
 pred = set().union(*all_preds)
 
@@ -171,7 +172,7 @@ pred = set().union(*all_preds)
 pred = [big.lower() for big in pred]
 
 
-# 对前两步(col_text和col_sql)找到的关键列名进行去重
+
 g_data_item = col_dict[str(g_eid)]["data_item"]
 g_dict[g_eid] = {
     "generations": [],
@@ -245,6 +246,7 @@ for i, res in response_dict.items():
 
 # ===================Run the generated SQL on an interpreter to get rows==========
 # =================== #g_pairs[n] 是最后用生成的SQL抽取到的相关的行，放到generations的末尾=======
+
 for eid, g_pairs in response_dict.items():
 
     g_dict[int(eid)]["generations"] = g_pairs
@@ -263,7 +265,7 @@ for eid, g_pairs in response_dict.items():
         )
         # 执行sql查询：exec_answer
         # (找到)['John', 'USA', '2020', 'Mary', 'UK', '2021']这种的单个样本
-
+        
         exec_answer = executor.sql_exec(norm_sql, db, verbose=False)
         
         # exec_rows返回的是['row 1', 'row 2', 'row 3']这样的

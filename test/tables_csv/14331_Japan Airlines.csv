@@ -1,0 +1,27 @@
+Aircraft,In service,Orders,Passengers,Passengers,Passengers,Passengers,Passengers,Notes
+Aircraft,In service,Orders,F,J,W,Y,Total,Notes
+Airbus A350-900,—,18,12,94,—,263,369,Order with 25 options. Delivery will begin in June 2019.
+Airbus A350-900,—,18,TBA,TBA,TBA,TBA,TBA,Order with 25 options. Delivery will begin in June 2019.
+Airbus A350-1000,—,13,TBA,TBA,TBA,TBA,TBA,-
+Boeing 737-800,50,—,—,20,—,145,165,-
+Boeing 737-800,50,—,12,132,144,-,-,-
+Boeing 767-300,6,—,—,42,—,219,261,-
+Boeing 767-300ER,29,—,5,42,—,205,252,-
+Boeing 767-300ER,29,—,42,219,261,-,-,-
+Boeing 767-300ER,29,—,30,207,237,-,-,-
+Boeing 767-300ER,29,—,30,197,227,-,-,-
+Boeing 767-300ER,29,—,24,175,199,-,-,-
+Boeing 777-200,12,—,14,82,—,279,375,-
+Boeing 777-200ER,11,—,—,42,40,154,236,-
+Boeing 777-200ER,11,—,26,286,312,-,-,-
+Boeing 777-200ER,11,—,56,40,149,245,-,-
+Boeing 777-300,4,—,—,78,—,422,500,-
+Boeing 777-300ER,13,—,8,49,40,147,244,-
+Boeing 787-8,25,4,—,38,35,88,161,-
+Boeing 787-8,25,4,—,30,—,156,186,-
+Boeing 787-8,25,4,—,30,—,176,206,-
+Boeing 787-9,17,3,—,44,35,116,195,-
+Boeing 787-9,17,3,—,52,35,116,203,-
+Boeing 787-9,17,3,—,28,21,190,239,-
+Mitsubishi MRJ90,—,32,TBA,TBA,TBA,TBA,TBA,-
+Total,167,70,-,-,-,-,-,-

@@ -1,0 +1,25 @@
+Line,Station,Japanese,Distance (km),Distance (km),Transfers,Location,Location
+Line,Station,Japanese,Between stations,Total,Transfers,Location,Location
+Ryōmō Line,Oyama,小山,-,0.0,"Tohoku Shinkansen, Tohoku Main Line (Utsunomiya Line), Shonan-Shinjuku Line, Mito Line",Oyama,Tochigi
+Ryōmō Line,Omoigawa,思川,5.4,5.4,-,Oyama,Tochigi
+Ryōmō Line,栃木,5.4,10.8,TN Tobu Nikko Line TN Tobu Utsunomiya Line,-,-,Tochigi
+Ryōmō Line,Ōhirashita,大平下,4.4,15.2,-,-,Tochigi
+Ryōmō Line,Iwafune,岩舟,4.1,19.3,-,-,Tochigi
+Ryōmō Line,Sano,佐野,7.3,26.6,Tōbu Sano Line,Sano,Tochigi
+Ryōmō Line,Tomita,富田,4.5,31.1,-,Ashikaga,Tochigi
+Ryōmō Line,Ashikaga Flower Park,あしかがフラワーパーク,0.9,32.0,-,Ashikaga,Tochigi
+Ryōmō Line,足利,6.2,38.2,TI Tobu Isesaki Line (Ashikagashi),-,Ashikaga,Tochigi
+Ryōmō Line,Yamamae,山前,4.5,42.7,-,Ashikaga,Tochigi
+Ryōmō Line,Omata,小俣,4.6,47.3,-,Ashikaga,Tochigi
+Ryōmō Line,Kiryū,桐生,5.6,52.9,Watarase Keikoku Line Jōmō Line (Nishi-Kiryū),Kiryū,Gunma
+Ryōmō Line,Iwajuku,岩宿,2.3,56.9,-,Midori,Gunma
+Ryōmō Line,Kunisada,国定,6.4,63.3,-,Isesaki,Gunma
+Ryōmō Line,伊勢崎,5.8,69.1,TI Tobu Isesaki Line,-,Isesaki,Gunma
+Ryōmō Line,Komagata,駒形,5.8,74.9,-,Maebashi,Gunma
+Ryōmō Line,Maebashi-Ōshima,前橋大島,3.2,78.1,-,Maebashi,Gunma
+Ryōmō Line,前橋,3.8,81.9,Jōmō Line (Chūō-Maebashi),-,Maebashi,Gunma
+Ryōmō Line,Shin-Maebashi,新前橋,2.5,84.4,"Joetsu Line (for Shibukawa), Agatsuma Line",Maebashi,Gunma
+Joetsu Line,Shin-Maebashi,新前橋,2.5,84.4,"Joetsu Line (for Shibukawa), Agatsuma Line",Maebashi,Gunma
+Joetsu Line,Ino,井野,3.3,87.7,-,Takasaki,Gunma
+Joetsu Line,Takasakitonyamachi,高崎問屋町,1.2,88.9,-,Takasaki,Gunma
+Joetsu Line,高崎,2.8,91.7,"Joetsu Shinkansen, Hokuriku Shinkansen, Takasaki Line, Shonan-Shinjuku Line, Shinetsu Main Line, Hachiko Line Jōshin Dentetsu Jōshin Line",-,Takasaki,Gunma

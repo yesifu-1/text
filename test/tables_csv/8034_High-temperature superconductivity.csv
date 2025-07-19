@@ -1,0 +1,12 @@
+Formula,Notation,Tc (K),No. of Cu-O planes in unit cell,Crystal structure
+YBa2Cu3O7,123,92,2,Orthorhombic
+Bi2Sr2CuO6,Bi-2201,20,1,Tetragonal
+Bi2Sr2CaCu2O8,Bi-2212,85,2,Tetragonal
+Bi2Sr2Ca2Cu3O10,Bi-2223,110,3,Tetragonal
+Tl2Ba2CuO6,Tl-2201,80,1,Tetragonal
+Tl2Ba2CaCu2O8,Tl-2212,108,2,Tetragonal
+Tl2Ba2Ca2Cu3O10,Tl-2223,125,3,Tetragonal
+TlBa2Ca3Cu4O11,Tl-1234,122,4,Tetragonal
+HgBa2CuO4,Hg-1201,94,1,Tetragonal
+HgBa2CaCu2O6,Hg-1212,128,2,Tetragonal
+HgBa2Ca2Cu3O8,Hg-1223,134,3,Tetragonal

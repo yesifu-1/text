@@ -1,0 +1,17 @@
+Name,Fuel,Type,Location,Maximum Capacity (MW),Commissioned
+Angaston,Diesel,internal combustion,Angaston,50,2005
+Blowering,Hydro,Turbo-pump,Blowering Dam,80,1969
+Guthega,Hydro,Turbo-pump,Near Guthega,60,1955
+Jindabyne Dam,Mini Hydro,Turbo-pump,Jindabyne,1.1,2011
+Jounama,Small Hydro,Turbo-pump,Near Jounama,14.4,2010
+Laverton North,Natural gas,Gas turbines,Laverton,320,2006
+Lonsdale,Diesel,internal combustion,Lonsdale,21,2002
+Murray 1,Hydro,Turbo-pump,Near Khancoban,950,1967
+Murray 2,Hydro,Turbo-pump,Near Khancoban,550,1969
+Port Stanvac,Diesel,internal combustion,Lonsdale,65,2011
+Tumut 1,Hydro,Turbo-pump,Tumut,330,1959
+Tumut 2,Hydro,Turbo-pump,Tumut,286,1962
+Tumut 3,Hydro,Turbo-pump,Tumut,"1,500",1973
+Tumut 3,Micro Hydro,Turbo-pump,Tumut,0.720,2003
+Valley Power,Natural gas,Gas turbines,Traralgon,300,2002
+Colongra,Natural gas,Gas turbines,Colongra,667,2009
