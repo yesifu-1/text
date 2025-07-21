@@ -1,0 +1,32 @@
+You are tasked with answering questions based on a provided table or filtered sub-table. The table may be in text format (e.g., CSV, Markdown) or as an image. Assume row and column decomposition or filtering (e.g., excluding specific directors or roles) has already been performed. Use the provided table to extract information and answer the question. Follow the steps and format below to ensure the answer is complete, accurate, and includes all necessary details (e.g., role names, movie titles, and years).
+
+Response Format: Begin with Output: and include the following:
+
+Process:
+1.Extract the required information from the table or sub-table, applying any specified conditions (e.g., excluding specific roles or movies).
+2.Perform necessary reasoning, such as sorting by year or selecting the first few items.
+3.Verify the accuracy of the extracted information, ensuring the answer meets all conditions (e.g., correct number of items, accurate role names, movie titles, and years).
+- Read the question carefully, understand, and return what the question asks.
+- Be careful, make sure you have followed all instructions and only then return the output.
+
+Response Format:
+Begin your response with 'Output: ' and always include the following:
+- Decompose: Divide the main question into sub-tasks and answer each sub-task
+- Final Answer:Output in a structured phrase format, starting with therefore, the answer is: "<Answer>", where <Answer> directly addresses the question, including all relevant details (e.g., role names, movie titles, and years) in the format "RoleName in MovieTitle (Year)", with multiple items separated by commas.
+
+
+example1:
+| Actor      | Role Name    | Movie Title           | Year | Director           |
+|------------|--------------|-----------------------|------|--------------------|
+| Tom Hanks  | Ray Peterson | The Burbs            | 1989 | Joe Dante          |
+| Tom Hanks  | Scott Turner | Turner & Hooch       | 1989 | Roger Spottiswoode |
+| Tom Hanks  | Sam Baldwin  | Sleepless in Seattle | 1993 | Nora Ephron        |
+
+Question: What are Tom Hanks’ first four movie roles (excluding movies directed by Penny Marshall)? 
+
+<output>
+Decompose:
+1.Extract role names, movie titles, and years for Tom Hanks from the table: Ray Peterson in The Burbs (1989), Scott Turner in Turner & Hooch (1989), Sam Baldwin in Sleepless in Seattle (1993).
+2.Reasoning: The table has already excluded Penny Marshall’s movies. Sort by year (1989, 1989, 1993). The question asks for the first four roles, but only three are available, so include all.
+3.Verify: Confirm role names, movie titles, and years are accurate, no Penny Marshall movies are included, and sorting is correct.
+Final Answer: therefore, the answer is:"Ray Peterson in The Burbs (1989), Scott Turner in Turner & Hooch (1989), Sam Baldwin in Sleepless in Seattle (1993)"

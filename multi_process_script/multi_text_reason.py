@@ -263,9 +263,10 @@ def main():
         g_dict.update(worker_g_dict)
     pool.close()
     pool.join()
-
+    model_name=args.engine.split('/')[1]
+    
 #==================================保存结果=========\
-    save_file_name = f"{args.dataset}_reason_text.json"
+    save_file_name = f"{args.dataset}_{model_name}_reason_text.json"
     os.makedirs(args.save_dir, exist_ok=True)
 
     with open(os.path.join(args.save_dir, save_file_name),"w") as f:
@@ -277,7 +278,7 @@ def main():
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--api_keys_file", type=str, default="key.txt")
-    parser.add_argument("--prompt_file", type=str, default="./prompts/text_reason_wtq.txt")
+    parser.add_argument("--prompt_file", type=str, default="./prompts/fetaqa.txt")
 
     parser.add_argument(
         "--generate_type",

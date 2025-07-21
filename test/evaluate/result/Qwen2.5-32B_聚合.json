@@ -1,0 +1,343 @@
+{
+    "0": {
+        "gold_answer": [
+            "wolfe tones"
+        ],
+        "pred_answer": [
+            "\"wolfe tones\""
+        ],
+        "score": {
+            "rouge1": [
+                1.0
+            ],
+            "rouge2": [
+                1.0
+            ],
+            "rougeL": [
+                1.0
+            ],
+            "rougeLsum": [
+                1.0
+            ]
+        },
+        "question": "which team won previous to crettyard?"
+    },
+    "5": {
+        "gold_answer": [
+            "new delhi, india"
+        ],
+        "pred_answer": [
+            "\"new delhi, india\""
+        ],
+        "score": {
+            "rouge1": [
+                1.0
+            ],
+            "rouge2": [
+                1.0
+            ],
+            "rougeL": [
+                1.0
+            ],
+            "rougeLsum": [
+                1.0
+            ]
+        },
+        "question": "what was the venue when he placed first?"
+    },
+    "10": {
+        "gold_answer": [
+            "10"
+        ],
+        "pred_answer": [
+            "\"10\""
+        ],
+        "score": {
+            "rouge1": [
+                1.0
+            ],
+            "rouge2": [
+                0.0
+            ],
+            "rougeL": [
+                1.0
+            ],
+            "rougeLsum": [
+                1.0
+            ]
+        },
+        "question": "what is the largest penalty?"
+    },
+    "1": {
+        "gold_answer": [
+            "12,467"
+        ],
+        "pred_answer": [],
+        "score": {
+            "rouge1": [
+                0.0
+            ],
+            "rouge2": [
+                0.0
+            ],
+            "rougeL": [
+                0.0
+            ],
+            "rougeLsum": [
+                0.0
+            ]
+        },
+        "question": "how many more passengers flew to los angeles than to saskatoon from manzanillo airport in 2013?"
+    },
+    "6": {
+        "gold_answer": [
+            "sweden"
+        ],
+        "pred_answer": [
+            "\"sweden\""
+        ],
+        "score": {
+            "rouge1": [
+                1.0
+            ],
+            "rouge2": [
+                0.0
+            ],
+            "rougeL": [
+                1.0
+            ],
+            "rougeLsum": [
+                1.0
+            ]
+        },
+        "question": "who ranked right after turkey?"
+    },
+    "11": {
+        "gold_answer": [
+            "17"
+        ],
+        "pred_answer": [
+            "\"12\""
+        ],
+        "score": {
+            "rouge1": [
+                0.0
+            ],
+            "rouge2": [
+                0.0
+            ],
+            "rougeL": [
+                0.0
+            ],
+            "rougeLsum": [
+                0.0
+            ]
+        },
+        "question": "what is the total number of pylons listed?"
+    },
+    "2": {
+        "gold_answer": [
+            "32"
+        ],
+        "pred_answer": [
+            "\"32\""
+        ],
+        "score": {
+            "rouge1": [
+                1.0
+            ],
+            "rouge2": [
+                0.0
+            ],
+            "rougeL": [
+                1.0
+            ],
+            "rougeLsum": [
+                1.0
+            ]
+        },
+        "question": "after winning on four credits with a full house, what is your payout?"
+    },
+    "7": {
+        "gold_answer": [
+            "1694"
+        ],
+        "pred_answer": [],
+        "score": {
+            "rouge1": [
+                0.0
+            ],
+            "rouge2": [
+                0.0
+            ],
+            "rougeL": [
+                0.0
+            ],
+            "rougeLsum": [
+                0.0
+            ]
+        },
+        "question": "what is the total population in dzhebariki-khaya?"
+    },
+    "12": {
+        "gold_answer": [
+            "22"
+        ],
+        "pred_answer": [
+            "\"22\""
+        ],
+        "score": {
+            "rouge1": [
+                1.0
+            ],
+            "rouge2": [
+                0.0
+            ],
+            "rougeL": [
+                1.0
+            ],
+            "rougeLsum": [
+                1.0
+            ]
+        },
+        "question": "how many districts are there in virginia?"
+    },
+    "3": {
+        "gold_answer": [
+            "siim ennemuist, andri aganits"
+        ],
+        "pred_answer": [
+            "\"siim ennemuist\", \"andri aganits\""
+        ],
+        "score": {
+            "rouge1": [
+                1.0
+            ],
+            "rouge2": [
+                1.0
+            ],
+            "rougeL": [
+                1.0
+            ],
+            "rougeLsum": [
+                1.0
+            ]
+        },
+        "question": "which players played the same position as ardo kreek?"
+    },
+    "8": {
+        "gold_answer": [
+            "iryna shpylova"
+        ],
+        "pred_answer": [
+            "\"iryna shpylova\""
+        ],
+        "score": {
+            "rouge1": [
+                1.0
+            ],
+            "rouge2": [
+                1.0
+            ],
+            "rougeL": [
+                1.0
+            ],
+            "rougeLsum": [
+                1.0
+            ]
+        },
+        "question": "who was the top ranked competitor in this race?"
+    },
+    "13": {
+        "gold_answer": [
+            "9"
+        ],
+        "pred_answer": [
+            "\"6\""
+        ],
+        "score": {
+            "rouge1": [
+                0.0
+            ],
+            "rouge2": [
+                0.0
+            ],
+            "rougeL": [
+                0.0
+            ],
+            "rougeLsum": [
+                0.0
+            ]
+        },
+        "question": "what is the number of tv shows that charmaine sheh has appeared on?"
+    },
+    "4": {
+        "gold_answer": [
+            "kim yu-na"
+        ],
+        "pred_answer": [
+            "\"kim yu-na\""
+        ],
+        "score": {
+            "rouge1": [
+                1.0
+            ],
+            "rouge2": [
+                1.0
+            ],
+            "rougeL": [
+                1.0
+            ],
+            "rougeLsum": [
+                1.0
+            ]
+        },
+        "question": "which athlete was from south korea after the year 2010?"
+    },
+    "9": {
+        "gold_answer": [
+            "2"
+        ],
+        "pred_answer": [
+            "\"2\""
+        ],
+        "score": {
+            "rouge1": [
+                1.0
+            ],
+            "rouge2": [
+                0.0
+            ],
+            "rougeL": [
+                1.0
+            ],
+            "rougeLsum": [
+                1.0
+            ]
+        },
+        "question": "what was the number of silver medals won by ukraine?"
+    },
+    "14": {
+        "gold_answer": [
+            "antelope"
+        ],
+        "pred_answer": [
+            "\"antelope\""
+        ],
+        "score": {
+            "rouge1": [
+                1.0
+            ],
+            "rouge2": [
+                0.0
+            ],
+            "rougeL": [
+                1.0
+            ],
+            "rougeLsum": [
+                1.0
+            ]
+        },
+        "question": "amazon is at the top of the chart, but what is the name below it?"
+    }
+}

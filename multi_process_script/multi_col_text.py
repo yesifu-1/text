@@ -104,7 +104,7 @@ def worker_annotate(
                 verbose=args.verbose
             )
             for eid, g_pairs in response_dict.items():
-                g_pairs = sorted(g_pairs, key=lambda x: x[-1], reverse=True)
+                
                 g_dict[eid]['generations'] = g_pairs
             
             built_few_shot_prompts = []
@@ -120,7 +120,7 @@ def worker_annotate(
             verbose=args.verbose
         )
         for eid, g_pairs in response_dict.items():
-            g_pairs = sorted(g_pairs, key=lambda x: x[-1], reverse=True)
+            
             g_dict[eid]['generations'] = g_pairs
     
     return g_dict
@@ -245,13 +245,14 @@ if __name__=='__main__':
             "no_table",
         ],
     )
+
     parser.add_argument("--save_dir", type=str, default="results/multi_process_model_gpt")
     parser.add_argument(
         "--input_program_file", type=str, default="col_sql.json"
     )
+    parser.add_argument("--n_processes", type=int, default=5)
     #先和上一层一样 先加载原始的表格数据和API KEYS=========================================================
     args = parser.parse_args()
-    args.n_processes=5
     args.dataset_path = f"./datasets/data/fetaQA-v1_test.json"
     
     main()

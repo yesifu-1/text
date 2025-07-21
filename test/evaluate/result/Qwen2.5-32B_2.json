@@ -1,0 +1,343 @@
+{
+    "0": {
+        "gold_answer": [
+            "across the rio grande in 1988 included the singles \"that's what your love does to me\" and \"(it's always gonna be) someday\"."
+        ],
+        "pred_answer": [
+            "\"that's what your love does to me\", \"(it's always gonna be) someday\""
+        ],
+        "score": {
+            "rouge1": [
+                0.7368421052631579
+            ],
+            "rouge2": [
+                0.6666666666666667
+            ],
+            "rougeL": [
+                0.7368421052631579
+            ],
+            "rougeLsum": [
+                0.7368421052631579
+            ]
+        },
+        "question": "What singles were Included in Across the Rio Grande in 1988?"
+    },
+    "5": {
+        "gold_answer": [
+            "kelli maroney's film roles were cindy carr in fast times at ridgemont high (1982), samantha in night of the comet (1984), jamie in the zero boys, and allison in chopping mall (1986)."
+        ],
+        "pred_answer": [
+            "\"samantha in tni of the comet, alison parks in chopping mall, jamie in the 0 boys, willie mcclatchie in big bad mama ii\""
+        ],
+        "score": {
+            "rouge1": [
+                0.4642857142857143
+            ],
+            "rouge2": [
+                0.25925925925925924
+            ],
+            "rougeL": [
+                0.35714285714285715
+            ],
+            "rougeLsum": [
+                0.35714285714285715
+            ]
+        },
+        "question": "Aside from Jolene in Slayground, what were Kelli Maroney's first four other roles?"
+    },
+    "10": {
+        "gold_answer": [
+            "at ferro, acuña played a total of 117 matches, with 5 goals and 23 assists."
+        ],
+        "pred_answer": [],
+        "score": {
+            "rouge1": [
+                0.0
+            ],
+            "rouge2": [
+                0.0
+            ],
+            "rougeL": [
+                0.0
+            ],
+            "rougeLsum": [
+                0.0
+            ]
+        },
+        "question": "Where did Marcos Acuña have the most matches, goals, and assists totals and assists and how many of each did he have.?"
+    },
+    "1": {
+        "gold_answer": [
+            "gerhard bigalk damaged one ship of 8,096 grt, and sunk one warship of 11,000 tons."
+        ],
+        "pred_answer": [
+            "\"hms audacity (sunk), corilla (damaged)\""
+        ],
+        "score": {
+            "rouge1": [
+                0.1818181818181818
+            ],
+            "rouge2": [
+                0.0
+            ],
+            "rougeL": [
+                0.0909090909090909
+            ],
+            "rougeLsum": [
+                0.0909090909090909
+            ]
+        },
+        "question": "What happened to the two heaviest ships Gerhard Bigalk attacked?"
+    },
+    "6": {
+        "gold_answer": [
+            "roscoe parrish competed in the 55 meters, posting a personal best time of 6.38 seconds in gainesville, florida on january 18, 2003 "
+        ],
+        "pred_answer": [
+            "\"6.38 seconds, made in gainesville, florida on 2003-1-18\""
+        ],
+        "score": {
+            "rouge1": [
+                0.5294117647058824
+            ],
+            "rouge2": [
+                0.3125
+            ],
+            "rougeL": [
+                0.4705882352941176
+            ],
+            "rougeLsum": [
+                0.4705882352941176
+            ]
+        },
+        "question": "What is the personal best of Roscoe Parrish in 55 meters, and where and when did he make it?"
+    },
+    "11": {
+        "gold_answer": [
+            "in 2002, masahiro iwata played for japan football league (jfl) club sc tottori."
+        ],
+        "pred_answer": [
+            "\"sc tottori\""
+        ],
+        "score": {
+            "rouge1": [
+                0.2666666666666667
+            ],
+            "rouge2": [
+                0.15384615384615385
+            ],
+            "rougeL": [
+                0.2666666666666667
+            ],
+            "rougeLsum": [
+                0.2666666666666667
+            ]
+        },
+        "question": "Which club did Masahiro Iwata play for in 2002?"
+    },
+    "2": {
+        "gold_answer": [
+            "in her third competition representing paraguay, ana camila pirelli won 1st place in the heptathlon at the south american youth championships at caracas, venezuela."
+        ],
+        "pred_answer": [
+            "\"yes, ana camila pirelli won early in her career representing paraguay in the south american youth championships (2006).\""
+        ],
+        "score": {
+            "rouge1": [
+                0.6666666666666666
+            ],
+            "rouge2": [
+                0.5
+            ],
+            "rougeL": [
+                0.4761904761904762
+            ],
+            "rougeLsum": [
+                0.4761904761904762
+            ]
+        },
+        "question": "Did Ana Camila Pirelli win early in her career representing Paraguay?"
+    },
+    "7": {
+        "gold_answer": [
+            "in 2008, boulter starred as the character \"jimmy dearden\" in the two-part episode \"wounds\" of the television series waking the dead."
+        ],
+        "pred_answer": [
+            "\"jimmy dearden in 2008, neil in 2008\""
+        ],
+        "score": {
+            "rouge1": [
+                0.3448275862068965
+            ],
+            "rouge2": [
+                0.22222222222222224
+            ],
+            "rougeL": [
+                0.20689655172413793
+            ],
+            "rougeLsum": [
+                0.20689655172413793
+            ]
+        },
+        "question": "Which role did Boulter play in 2008?"
+    },
+    "12": {
+        "gold_answer": [
+            "in 2005, wu was nominated as best actor at the 24th hong kong film awards for his role in one nite in mongkok, and as best supporting actor for new police story."
+        ],
+        "pred_answer": [],
+        "score": {
+            "rouge1": [
+                0.0
+            ],
+            "rouge2": [
+                0.0
+            ],
+            "rougeL": [
+                0.0
+            ],
+            "rougeLsum": [
+                0.0
+            ]
+        },
+        "question": "During the 24th Hong Kong Film Awards, what awards were Daniel Wu nominated for, and for which roles did he earn those nominations, respectively?"
+    },
+    "3": {
+        "gold_answer": [
+            "tasmania had ibadulla (51) and underwood (3/39) and were out for 223."
+        ],
+        "pred_answer": [
+            "\"p.g. roberts 77, p. lever 0.235294117647059, d. wilson 0.09375, k. ibadulla (c) 51, d.l. underwood 0.0769230769230769\""
+        ],
+        "score": {
+            "rouge1": [
+                0.17647058823529413
+            ],
+            "rouge2": [
+                0.0
+            ],
+            "rougeL": [
+                0.17647058823529413
+            ],
+            "rougeLsum": [
+                0.17647058823529413
+            ]
+        },
+        "question": "Who did Tasmania have in the MCC tour of Australia in 1970–71 and what were they out for?"
+    },
+    "8": {
+        "gold_answer": [
+            "in 2007, paul schneider portrayed gus in lars and the real girl and dick liddil in the assassination of jesse james by the coward robert ford."
+        ],
+        "pred_answer": [
+            "\"dick liddil in the assassination of jesse james by the coward robert ford (2007), gus in lars and the real girl (2007)\""
+        ],
+        "score": {
+            "rouge1": [
+                0.875
+            ],
+            "rouge2": [
+                0.782608695652174
+            ],
+            "rougeL": [
+                0.5416666666666667
+            ],
+            "rougeLsum": [
+                0.5416666666666667
+            ]
+        },
+        "question": "What roles did Paul Schneider play in 2007?"
+    },
+    "13": {
+        "gold_answer": [
+            "in 2015, lucie jones played the role of emma in like me."
+        ],
+        "pred_answer": [
+            "\"emma in like me (2015)\""
+        ],
+        "score": {
+            "rouge1": [
+                0.5882352941176471
+            ],
+            "rouge2": [
+                0.39999999999999997
+            ],
+            "rougeL": [
+                0.47058823529411764
+            ],
+            "rougeLsum": [
+                0.47058823529411764
+            ]
+        },
+        "question": "What year did Lucie Jones appear in Like Me and which role did she play?"
+    },
+    "4": {
+        "gold_answer": [
+            "ksw 21: ultimate explanation was held in hala torwar in warsaw, poland."
+        ],
+        "pred_answer": [
+            "\"yes, ksw 21: ultimate explanation was held in hala torwar, which is not listed as an arena in the provided table.\""
+        ],
+        "score": {
+            "rouge1": [
+                0.6060606060606061
+            ],
+            "rouge2": [
+                0.5161290322580645
+            ],
+            "rougeL": [
+                0.6060606060606061
+            ],
+            "rougeLsum": [
+                0.6060606060606061
+            ]
+        },
+        "question": "Were any KSW events in 2012 not held in arenas?"
+    },
+    "9": {
+        "gold_answer": [
+            "in 2008, dourif portrayed becky in garden party and lisa in frank the rat."
+        ],
+        "pred_answer": [
+            "\"becky, lisa, detective nikki breslin\""
+        ],
+        "score": {
+            "rouge1": [
+                0.21052631578947364
+            ],
+            "rouge2": [
+                0.0
+            ],
+            "rougeL": [
+                0.21052631578947364
+            ],
+            "rougeLsum": [
+                0.21052631578947364
+            ]
+        },
+        "question": "What roles did Dourif portray in 2008?"
+    },
+    "14": {
+        "gold_answer": [
+            "the pixel aspect ratio for 480 is 10:11 and for 576 is 59:54."
+        ],
+        "pred_answer": [
+            "\"1.0925, 1.456790123 for 576, 0.9, 1.21 for 480\""
+        ],
+        "score": {
+            "rouge1": [
+                0.2962962962962963
+            ],
+            "rouge2": [
+                0.16
+            ],
+            "rougeL": [
+                0.14814814814814814
+            ],
+            "rougeLsum": [
+                0.14814814814814814
+            ]
+        },
+        "question": "What is the pixel aspect ratio for the 480 and 576?"
+    }
+}

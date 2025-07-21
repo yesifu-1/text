@@ -1,0 +1,2160 @@
+{
+    "0": {
+        "generations": [
+            "1. Plan:\n a. Identify the rows where the 'album' is 'Across the rio grande' and 'year' is 1988.\n b. Extract the 'single' column for those specific rows."
+        ],
+        "cols": [
+            "year",
+            "single",
+            "album"
+        ],
+        "ori_data_item": {
+            "id": 12322,
+            "table": {
+                "id": 12322,
+                "header": [
+                    "Year",
+                    "Single",
+                    "Peak chart positions",
+                    "Peak chart positions",
+                    "Album"
+                ],
+                "rows": [
+                    [
+                        "Year",
+                        "Single",
+                        "US Country",
+                        "CAN Country",
+                        "Album"
+                    ],
+                    [
+                        "1985",
+                        "\"Playing for Keeps\"",
+                        "62",
+                        "\u2014",
+                        "N/A"
+                    ],
+                    [
+                        "1985",
+                        "\"My Heart Holds On\"",
+                        "64",
+                        "\u2014",
+                        "Holly Dunn"
+                    ],
+                    [
+                        "1986",
+                        "\"Two Too Many\"",
+                        "39",
+                        "\u2014",
+                        "Holly Dunn"
+                    ],
+                    [
+                        "1986",
+                        "\"Daddy's Hands\"",
+                        "7",
+                        "\u2014",
+                        "Holly Dunn"
+                    ],
+                    [
+                        "1987",
+                        "\"Love Someone Like Me\"",
+                        "2",
+                        "2",
+                        "Cornerstone"
+                    ],
+                    [
+                        "1987",
+                        "\"Only When I Love\"",
+                        "4",
+                        "7",
+                        "Cornerstone"
+                    ],
+                    [
+                        "1988",
+                        "\"Strangers Again\"",
+                        "7",
+                        "36",
+                        "Cornerstone"
+                    ],
+                    [
+                        "1988",
+                        "\"That's What Your Love Does to Me\"",
+                        "5",
+                        "6",
+                        "Across the Rio Grande"
+                    ],
+                    [
+                        "1988",
+                        "\"(It's Always Gonna Be) Someday\"",
+                        "11",
+                        "N/A",
+                        "Across the Rio Grande"
+                    ],
+                    [
+                        "1989",
+                        "\"Are You Ever Gonna Love Me\"",
+                        "1",
+                        "6",
+                        "The Blue Rose of Texas"
+                    ],
+                    [
+                        "1989",
+                        "\"There Goes My Heart Again\"",
+                        "4",
+                        "8",
+                        "The Blue Rose of Texas"
+                    ],
+                    [
+                        "1990",
+                        "\"My Anniversary for Being a Fool\"",
+                        "63",
+                        "75",
+                        "Heart Full of Love"
+                    ],
+                    [
+                        "1990",
+                        "\"You Really Had Me Going\"",
+                        "1",
+                        "1",
+                        "Heart Full of Love"
+                    ],
+                    [
+                        "1991",
+                        "\"Heart Full of Love\"",
+                        "19",
+                        "12",
+                        "Heart Full of Love"
+                    ],
+                    [
+                        "1991",
+                        "\"Maybe I Mean Yes\"",
+                        "48",
+                        "45",
+                        "Milestones: Greatest Hits"
+                    ],
+                    [
+                        "1991",
+                        "\"No One Takes the Train Anymore\"",
+                        "\u2014",
+                        "\u2014",
+                        "Milestones: Greatest Hits"
+                    ],
+                    [
+                        "1992",
+                        "\"No Love Have I\"",
+                        "67",
+                        "\u2014",
+                        "Getting It Dunn"
+                    ],
+                    [
+                        "1992",
+                        "\"As Long as You Belong to Me\"",
+                        "68",
+                        "\u2014",
+                        "Getting It Dunn"
+                    ],
+                    [
+                        "1992",
+                        "\"Golden Years\"",
+                        "51",
+                        "62",
+                        "Getting It Dunn"
+                    ],
+                    [
+                        "1995",
+                        "\"I Am Who I Am\"",
+                        "56",
+                        "56",
+                        "Life and Love and All the Stages"
+                    ],
+                    [
+                        "1995",
+                        "\"Cowboys Are My Weakness\"",
+                        "\u2014",
+                        "\u2014",
+                        "Life and Love and All the Stages"
+                    ],
+                    [
+                        "1995",
+                        "\"It's Not About Blame\"",
+                        "\u2014",
+                        "\u2014",
+                        "Life and Love and All the Stages"
+                    ],
+                    [
+                        "1997",
+                        "\"Leave One Bridge Standing\"",
+                        "\u2014",
+                        "\u2014",
+                        "Leave One Bridge Standing"
+                    ],
+                    [
+                        "\"\u2014\" denotes releases that did not chart",
+                        "\"\u2014\" denotes releases that did not chart",
+                        "\"\u2014\" denotes releases that did not chart",
+                        "\"\u2014\" denotes releases that did not chart",
+                        "\"\u2014\" denotes releases that did not chart"
+                    ]
+                ],
+                "page_title": "Holly Dunn"
+            },
+            "question": "What singles were Included in Across the Rio Grande in 1988?",
+            "answer": "Across the Rio Grande in 1988 included the singles \"That's What Your Love Does to Me\" and \"(It's Always Gonna Be) Someday\"."
+        }
+    },
+    "5": {
+        "generations": [
+            "1. Plan:\n   a. Extract the 'role' and 'title' columns to identify the roles played by Kelli Maroney.\n   b. Exclude the role 'Jolene' from the list.\n   c. Select the first four roles from the remaining list.\n2. Retrieval:\nExplanation: The 'role' and 'title' columns are necessary to identify the roles played by Kelli Maroney and the corresponding titles of the works. The 'role' column will help in identifying the specific character names, and the 'title' column will provide the titles of the works where these roles were played. Excluding 'Jolene' and selecting the first four roles will give us the answer to the question.\nEvidence: f_col([title, role])"
+        ],
+        "cols": [
+            "role",
+            "title"
+        ],
+        "ori_data_item": {
+            "id": 9673,
+            "table": {
+                "id": 9673,
+                "header": [
+                    "Year",
+                    "Title",
+                    "Role",
+                    "Notes"
+                ],
+                "rows": [
+                    [
+                        "1982",
+                        "Fast Times at Ridgemont High",
+                        "Cindy",
+                        "-"
+                    ],
+                    [
+                        "1983",
+                        "Slayground",
+                        "Jolene",
+                        "-"
+                    ],
+                    [
+                        "1984",
+                        "Night of the Comet",
+                        "Samantha",
+                        "-"
+                    ],
+                    [
+                        "1986",
+                        "Chopping Mall",
+                        "Alison Parks",
+                        "-"
+                    ],
+                    [
+                        "1986",
+                        "The Zero Boys",
+                        "Jamie",
+                        "-"
+                    ],
+                    [
+                        "1987",
+                        "Big Bad Mama II",
+                        "Willie McClatchie",
+                        "-"
+                    ],
+                    [
+                        "1988",
+                        "Not of This Earth",
+                        "Nurse Oxford",
+                        "-"
+                    ],
+                    [
+                        "1989",
+                        "Jaded",
+                        "Jennifer",
+                        "-"
+                    ],
+                    [
+                        "1989",
+                        "Transylvania Twist",
+                        "Hannah",
+                        "-"
+                    ],
+                    [
+                        "1990",
+                        "Hard to Die",
+                        "Porno Wife",
+                        "-"
+                    ],
+                    [
+                        "1991",
+                        "Servants of Twilight",
+                        "Sherry Ordway",
+                        "-"
+                    ],
+                    [
+                        "1991",
+                        "Scream Queen Hot Tub Party",
+                        "Herself",
+                        "Video"
+                    ],
+                    [
+                        "1993",
+                        "Midnight Witness",
+                        "Devon",
+                        "-"
+                    ],
+                    [
+                        "1999",
+                        "Sam and Mike",
+                        "-",
+                        "Short film"
+                    ],
+                    [
+                        "2004",
+                        "Audition",
+                        "Brett",
+                        "Short film"
+                    ],
+                    [
+                        "2011",
+                        "Lip Service",
+                        "Janice",
+                        "-"
+                    ],
+                    [
+                        "2012",
+                        "Dark Star Hollow",
+                        "Sarah Rose Barteaux",
+                        "Post-production"
+                    ]
+                ],
+                "page_title": "Kelli Maroney"
+            },
+            "question": "Aside from Jolene in Slayground, what were Kelli Maroney's first four other roles?",
+            "answer": "Kelli Maroney's film roles were Cindy Carr in Fast Times at Ridgemont High (1982), Samantha in Night of the Comet (1984), Jamie in The Zero Boys, and Allison in Chopping Mall (1986)."
+        }
+    },
+    "10": {
+        "generations": [
+            "1. Plan:\n a. Identify the 'total' column to find the total number of matches played.\n b. Identify the 'league_3' column to find the total number of goals scored.\n c. Identify the 'league_4' column to find the total number of assists made.\n d. Identify the 'cup_2' and 'cup_3' columns to find the total number of cup goals and assists.\n e. Identify the 'continental_2' and 'continental_3' columns to find the total number of continental goals and assists.\n f. Identify the 'club' column to determine the club with the highest totals.\n2. Retrieval:\nExplanation: The 'total' column will provide the total number of matches played, 'league_3' for total goals scored, 'league_4' for total assists made, 'cup_2' and 'cup_3' for cup goals and assists, and 'continental_2' and 'continental_3' for continental goals and assists. The 'club' column will help to identify the club with the highest totals.\nEvidence: f_col([club, total, league_3, league_4, cup_2, cup_3, continental_2, continental_3])"
+        ],
+        "cols": [
+            "total_3",
+            "club",
+            "league",
+            "total_2",
+            "season",
+            "total"
+        ],
+        "ori_data_item": {
+            "id": 21526,
+            "table": {
+                "id": 21526,
+                "header": [
+                    "Club",
+                    "League",
+                    "Season",
+                    "League",
+                    "League",
+                    "League",
+                    "Cup",
+                    "Cup",
+                    "Cup",
+                    "Continental",
+                    "Continental",
+                    "Continental",
+                    "Total",
+                    "Total",
+                    "Total"
+                ],
+                "rows": [
+                    [
+                        "Club",
+                        "League",
+                        "Season",
+                        "Apps",
+                        "Goals",
+                        "Asts",
+                        "Apps",
+                        "Goals",
+                        "Asts",
+                        "Apps",
+                        "Goals",
+                        "Asts",
+                        "Apps",
+                        "Goals",
+                        "Asts"
+                    ],
+                    [
+                        "Ferro Carril Oeste",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-"
+                    ],
+                    [
+                        "Ferro Carril Oeste",
+                        "Primera B",
+                        "2010\u201311",
+                        "7",
+                        "0",
+                        "0",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "7",
+                        "0",
+                        "0"
+                    ],
+                    [
+                        "Ferro Carril Oeste",
+                        "Primera B",
+                        "2011\u201312",
+                        "31",
+                        "2",
+                        "0",
+                        "1",
+                        "0",
+                        "0",
+                        "-",
+                        "-",
+                        "-",
+                        "32",
+                        "2",
+                        "0"
+                    ],
+                    [
+                        "Ferro Carril Oeste",
+                        "Primera B",
+                        "2012\u201313",
+                        "36",
+                        "1",
+                        "0",
+                        "1",
+                        "0",
+                        "0",
+                        "-",
+                        "-",
+                        "-",
+                        "37",
+                        "1",
+                        "0"
+                    ],
+                    [
+                        "Ferro Carril Oeste",
+                        "Primera B",
+                        "2013\u201314",
+                        "39",
+                        "2",
+                        "0",
+                        "2",
+                        "0",
+                        "0",
+                        "-",
+                        "-",
+                        "-",
+                        "41",
+                        "2",
+                        "0"
+                    ],
+                    [
+                        "Ferro Carril Oeste",
+                        "Total",
+                        "Total",
+                        "113",
+                        "5",
+                        "-",
+                        "4",
+                        "0",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "117",
+                        "5",
+                        "23"
+                    ],
+                    [
+                        "Racing Club",
+                        "Primera Division",
+                        "2014",
+                        "16",
+                        "2",
+                        "1",
+                        "2",
+                        "1",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "18",
+                        "3",
+                        "1"
+                    ],
+                    [
+                        "Racing Club",
+                        "Primera Division",
+                        "2015",
+                        "27",
+                        "4",
+                        "9",
+                        "3",
+                        "0",
+                        "0",
+                        "9",
+                        "0",
+                        "0",
+                        "39",
+                        "4",
+                        "9"
+                    ],
+                    [
+                        "Racing Club",
+                        "Primera Division",
+                        "2016",
+                        "10",
+                        "1",
+                        "0",
+                        "-",
+                        "-",
+                        "-",
+                        "10",
+                        "1",
+                        "2",
+                        "20",
+                        "2",
+                        "2"
+                    ],
+                    [
+                        "Racing Club",
+                        "Primera Division",
+                        "2016\u201317",
+                        "25",
+                        "9",
+                        "13",
+                        "4",
+                        "1",
+                        "0",
+                        "3",
+                        "1",
+                        "1",
+                        "32",
+                        "11",
+                        "12"
+                    ],
+                    [
+                        "Racing Club",
+                        "Total",
+                        "Total",
+                        "78",
+                        "16",
+                        "23",
+                        "9",
+                        "2",
+                        "0",
+                        "22",
+                        "2",
+                        "3",
+                        "109",
+                        "20",
+                        "24"
+                    ],
+                    [
+                        "Sporting CP",
+                        "Primeira Liga",
+                        "2017\u201318",
+                        "31",
+                        "4",
+                        "5",
+                        "10",
+                        "1",
+                        "1",
+                        "13",
+                        "1",
+                        "3",
+                        "54",
+                        "6",
+                        "9"
+                    ],
+                    [
+                        "Sporting CP",
+                        "Primeira Liga",
+                        "2018\u201319",
+                        "22",
+                        "1",
+                        "3",
+                        "7",
+                        "0",
+                        "3",
+                        "6",
+                        "0",
+                        "0",
+                        "35",
+                        "1",
+                        "6"
+                    ],
+                    [
+                        "Sporting CP",
+                        "Total",
+                        "Total",
+                        "53",
+                        "5",
+                        "8",
+                        "17",
+                        "1",
+                        "4",
+                        "19",
+                        "1",
+                        "3",
+                        "79",
+                        "7",
+                        "15"
+                    ],
+                    [
+                        "Career Total",
+                        "Career Total",
+                        "Career Total",
+                        "216",
+                        "22",
+                        "28",
+                        "26",
+                        "1",
+                        "4",
+                        "35",
+                        "3",
+                        "6",
+                        "277",
+                        "27",
+                        "59"
+                    ]
+                ],
+                "page_title": "Marcos Acu\u00f1a"
+            },
+            "question": "Where did Marcos Acu\u00f1a have the most matches, goals, and assists totals and assists and how many of each did he have.?",
+            "answer": "At Ferro, Acu\u00f1a played a total of 117 matches, with 5 goals and 23 assists."
+        }
+    },
+    "1": {
+        "generations": [
+            "1. Plan:\n   a. Identify the two ships with the highest tonnage from the 'tonnage (grt)' column.\n   b. Use the 'name' and 'fate' columns to determine what happened to these ships.\n2. Retrieval:\nExplanation: The 'tonnage (grt)' column is used to find the two heaviest ships. The 'name' column identifies the ships, and the 'fate' column tells us what happened to them.\nEvidence: f_col([name, tonnage (grt), fate])"
+        ],
+        "cols": [
+            "fate",
+            "name",
+            "tonnage (grt)"
+        ],
+        "ori_data_item": {
+            "id": 10055,
+            "table": {
+                "id": 10055,
+                "header": [
+                    "Date",
+                    "Name",
+                    "Nationality",
+                    "Tonnage (GRT)",
+                    "Fate"
+                ],
+                "rows": [
+                    [
+                        "14 June 1941",
+                        "St. Lindsay",
+                        "United Kingdom",
+                        "5,370",
+                        "Sunk"
+                    ],
+                    [
+                        "21 December 1941",
+                        "HMS Audacity",
+                        "Royal Navy",
+                        "11,000",
+                        "Sunk"
+                    ],
+                    [
+                        "2 February 1942",
+                        "Corilla",
+                        "Netherlands",
+                        "8,096",
+                        "Damaged"
+                    ],
+                    [
+                        "4 February 1942",
+                        "Silveray",
+                        "United Kingdom",
+                        "4,535",
+                        "Sunk"
+                    ],
+                    [
+                        "7 February 1942",
+                        "Empire Sun",
+                        "United Kingdom",
+                        "6,952",
+                        "Sunk"
+                    ],
+                    [
+                        "16 May 1942",
+                        "Nicarao",
+                        "United States",
+                        "1,445",
+                        "Sunk"
+                    ],
+                    [
+                        "19 May 1942",
+                        "Isabela",
+                        "United States",
+                        "3,110",
+                        "Sunk"
+                    ]
+                ],
+                "page_title": "Gerhard Bigalk"
+            },
+            "question": "What happened to the two heaviest ships Gerhard Bigalk attacked?",
+            "answer": "Gerhard Bigalk damaged one ship of 8,096 GRT, and sunk one warship of 11,000 tons."
+        }
+    },
+    "6": {
+        "generations": [
+            "1. Plan:\n a. Extract the row where the 'event' is '55 meters' as it is the specific event asked in the question.\n b. The 'time (seconds)', 'venue', and 'date' columns contain the information relevant to the question.\n2. Retrieval:\nExplanation: The 'event' column is used to identify the row corresponding to the 55 meters race. The 'time (seconds)' column gives the performance metric, while the 'venue' and 'date' columns provide the location and timing of the event, respectively.\nEvidence: f_col([event, time (seconds), venue, date])"
+        ],
+        "cols": [
+            "venue",
+            "event",
+            "date",
+            "time (seconds)"
+        ],
+        "ori_data_item": {
+            "id": 1234,
+            "table": {
+                "id": 1234,
+                "header": [
+                    "Event",
+                    "Time (seconds)",
+                    "Venue",
+                    "Date"
+                ],
+                "rows": [
+                    [
+                        "55 meters",
+                        "6.38",
+                        "Gainesville, Florida",
+                        "January 18, 2003"
+                    ],
+                    [
+                        "60 meters",
+                        "6.89",
+                        "Syracuse, New York",
+                        "February 16, 2002"
+                    ],
+                    [
+                        "100 meters",
+                        "10.65",
+                        "Coral Gables, Florida",
+                        "April 12, 2003"
+                    ],
+                    [
+                        "200 meters",
+                        "21.13",
+                        "Storrs, Connecticut",
+                        "May 4, 2003"
+                    ]
+                ],
+                "page_title": "Roscoe Parrish"
+            },
+            "question": "What is the personal best of Roscoe Parrish in 55 meters, and where and when did he make it?",
+            "answer": "Roscoe Parrish competed in the 55 meters, posting a personal best time of 6.38 seconds in Gainesville, Florida on\u00a0January 18, 2003\u00a0"
+        }
+    },
+    "11": {
+        "generations": [
+            "1. Plan:\n   a. Identify the row corresponding to the year 2002.\n   b. Extract the club name from the 'club performance_2' column for that year.\n2. Retrieval:\nExplanation: The 'club performance_2' column contains the club names for each year, and the 'club performance' column contains the years. By identifying the row where 'club performance' is 2002, we can find the corresponding club in the 'club performance_2' column.\nEvidence: f_col([club performance, club performance_2])"
+        ],
+        "cols": [
+            "club performance",
+            "club performance_2"
+        ],
+        "ori_data_item": {
+            "id": 20717,
+            "table": {
+                "id": 20717,
+                "header": [
+                    "Club performance",
+                    "Club performance",
+                    "Club performance",
+                    "League",
+                    "League",
+                    "Cup",
+                    "Cup",
+                    "League Cup",
+                    "League Cup",
+                    "Total",
+                    "Total"
+                ],
+                "rows": [
+                    [
+                        "Season",
+                        "Club",
+                        "League",
+                        "Apps",
+                        "Goals",
+                        "Apps",
+                        "Goals",
+                        "Apps",
+                        "Goals",
+                        "Apps",
+                        "Goals"
+                    ],
+                    [
+                        "Japan",
+                        "Japan",
+                        "Japan",
+                        "League",
+                        "League",
+                        "Emperor's Cup",
+                        "Emperor's Cup",
+                        "J.League Cup",
+                        "J.League Cup",
+                        "Total",
+                        "Total"
+                    ],
+                    [
+                        "2000",
+                        "Nagoya Grampus Eight",
+                        "J1 League",
+                        "7",
+                        "0",
+                        "-",
+                        "-",
+                        "1",
+                        "0",
+                        "8",
+                        "0"
+                    ],
+                    [
+                        "2001",
+                        "Nagoya Grampus Eight",
+                        "J1 League",
+                        "1",
+                        "0",
+                        "-",
+                        "-",
+                        "0",
+                        "0",
+                        "1",
+                        "0"
+                    ],
+                    [
+                        "2002",
+                        "SC Tottori",
+                        "Football League",
+                        "6",
+                        "0",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "6",
+                        "0"
+                    ],
+                    [
+                        "2003",
+                        "SC Tottori",
+                        "Football League",
+                        "10",
+                        "1",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "10",
+                        "1"
+                    ],
+                    [
+                        "2004",
+                        "SC Tottori",
+                        "Football League",
+                        "18",
+                        "1",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "18",
+                        "1"
+                    ],
+                    [
+                        "2005",
+                        "FC Gifu",
+                        "Regional Leagues",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-"
+                    ],
+                    [
+                        "2006",
+                        "FC Gifu",
+                        "Regional Leagues",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "-"
+                    ],
+                    [
+                        "2007",
+                        "FC Gifu",
+                        "Football League",
+                        "21",
+                        "1",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "21",
+                        "1"
+                    ],
+                    [
+                        "2008",
+                        "FC Gifu",
+                        "J2 League",
+                        "14",
+                        "0",
+                        "-",
+                        "-",
+                        "-",
+                        "-",
+                        "14",
+                        "0"
+                    ],
+                    [
+                        "Country",
+                        "Japan",
+                        "Japan",
+                        "77",
+                        "3",
+                        "0",
+                        "0",
+                        "1",
+                        "0",
+                        "78",
+                        "3"
+                    ],
+                    [
+                        "Total",
+                        "Total",
+                        "Total",
+                        "77",
+                        "3",
+                        "0",
+                        "0",
+                        "1",
+                        "0",
+                        "78",
+                        "3"
+                    ]
+                ],
+                "page_title": "Masahiro Iwata"
+            },
+            "question": "Which club did Masahiro Iwata play for in 2002?",
+            "answer": "In 2002, Masahiro Iwata played for Japan Football League (JFL) club SC Tottori."
+        }
+    },
+    "2": {
+        "generations": [
+            "1. Plan:\n a. Identify the rows where Ana Camila Pirelli represents Paraguay.\n b. Determine the earliest years of her career.\n c. Check the positions she achieved in those early years to see if she won any competitions.\n2. Retrieval:\nExplanation: The 'year' column will help identify the early years of her career. The 'position' column will show the results of her competitions. The 'notes' column could provide additional context on her performance.\nEvidence: f_col([year, position, notes])"
+        ],
+        "cols": [
+            "competition",
+            "position",
+            "year"
+        ],
+        "ori_data_item": {
+            "id": 1786,
+            "table": {
+                "id": 1786,
+                "header": [
+                    "Year",
+                    "Competition",
+                    "Venue",
+                    "Position",
+                    "Event",
+                    "Notes"
+                ],
+                "rows": [
+                    [
+                        "Representing the Paraguay",
+                        "Representing the Paraguay",
+                        "Representing the Paraguay",
+                        "Representing the Paraguay",
+                        "Representing the Paraguay",
+                        "Representing the Paraguay"
+                    ],
+                    [
+                        "2005",
+                        "South American Junior Championships",
+                        "Rosario, Argentina",
+                        "9th",
+                        "Shot put",
+                        "10.54 m"
+                    ],
+                    [
+                        "2005",
+                        "South American Junior Championships",
+                        "Rosario, Argentina",
+                        "8th",
+                        "Javelin",
+                        "32.12 m"
+                    ],
+                    [
+                        "2006",
+                        "South American U23 Championships / South American Games",
+                        "Buenos Aires, Argentina",
+                        "4th",
+                        "Heptathlon",
+                        "4593 pts"
+                    ],
+                    [
+                        "2006",
+                        "South American Youth Championships",
+                        "Caracas, Venezuela",
+                        "1st",
+                        "Heptathlon",
+                        "4790 pts"
+                    ],
+                    [
+                        "2007",
+                        "South American Junior Championships",
+                        "Sao Paulo, Brazil",
+                        "8th",
+                        "100 m H",
+                        "15.57 (0.0 m/s)"
+                    ],
+                    [
+                        "2007",
+                        "South American Junior Championships",
+                        "Sao Paulo, Brazil",
+                        "7th",
+                        "4\u00d7100 m",
+                        "49.55"
+                    ],
+                    [
+                        "2007",
+                        "South American Junior Championships",
+                        "Sao Paulo, Brazil",
+                        "2nd",
+                        "Heptathlon",
+                        "4873 pts"
+                    ],
+                    [
+                        "2007",
+                        "Pan American Junior Championships",
+                        "Sao Paulo, Brazil",
+                        "4th",
+                        "Heptathlon",
+                        "4873 pts"
+                    ],
+                    [
+                        "2008",
+                        "Pan American Combined Events Championships",
+                        "Santo Domingo, Dominican Republic",
+                        "12th",
+                        "Heptathlon",
+                        "4940 pts"
+                    ],
+                    [
+                        "2009",
+                        "South American Championships",
+                        "Lima, Per\u00fa",
+                        "5th",
+                        "Heptathlon",
+                        "4754 pts"
+                    ],
+                    [
+                        "2010",
+                        "South American Under-23 Championships",
+                        "Medell\u00edn, Colombia",
+                        "3rd",
+                        "Heptathlon",
+                        "5118 pts"
+                    ],
+                    [
+                        "2011",
+                        "South American Championships",
+                        "Buenos Aires, Argentina",
+                        "4th",
+                        "Heptathlon",
+                        "5115 pts"
+                    ],
+                    [
+                        "2011",
+                        "Pan American Games",
+                        "Guadalajara, M\u00e9xico",
+                        "9th",
+                        "Heptathlon",
+                        "5157 pts A"
+                    ],
+                    [
+                        "2012",
+                        "Ibero-American Championships",
+                        "Barquisimeto, Venezuela",
+                        "5th",
+                        "Heptathlon",
+                        "5479 pts"
+                    ],
+                    [
+                        "2013",
+                        "Pan American Combined Events Cup",
+                        "Ottawa, Canada",
+                        "2nd",
+                        "Heptathlon",
+                        "5683 pts"
+                    ],
+                    [
+                        "2013",
+                        "South American Championships",
+                        "Cartagena, Colombia",
+                        "2nd",
+                        "Heptathlon",
+                        "5610 pts"
+                    ],
+                    [
+                        "2013",
+                        "Bolivarian Games",
+                        "Trujillo, Per\u00fa",
+                        "6th",
+                        "100 m H",
+                        "14.15 (+0.1 m/s)"
+                    ],
+                    [
+                        "2013",
+                        "Bolivarian Games",
+                        "Trujillo, Per\u00fa",
+                        "1st",
+                        "Heptathlon",
+                        "5733 pts"
+                    ],
+                    [
+                        "2014",
+                        "South American Games",
+                        "Santiago, Chile",
+                        "1st",
+                        "Heptathlon",
+                        "5669 pts"
+                    ],
+                    [
+                        "2014",
+                        "Pan American Combined Events Cup",
+                        "Ottawa, Canada",
+                        "7th",
+                        "Heptathlon",
+                        "5548 pts"
+                    ],
+                    [
+                        "2014",
+                        "Ibero-American Championships",
+                        "S\u00e3o Paulo, Brazil",
+                        "\u2013",
+                        "Heptathlon",
+                        "DNF"
+                    ],
+                    [
+                        "2015",
+                        "South American Championships",
+                        "Lima, Peru",
+                        "5th",
+                        "Heptathlon",
+                        "5363 pts"
+                    ],
+                    [
+                        "2015",
+                        "Pan American Games",
+                        "Toronto, Canada",
+                        "9th",
+                        "Heptathlon",
+                        "5663 pts"
+                    ],
+                    [
+                        "2015",
+                        "World Championships",
+                        "Beijing, China",
+                        "35th (h)",
+                        "100 m H",
+                        "14.09"
+                    ],
+                    [
+                        "2016",
+                        "Ibero-American Championships",
+                        "Rio de Janeiro, Brazil",
+                        "3rd",
+                        "Heptathlon",
+                        "5748 pts"
+                    ],
+                    [
+                        "2017",
+                        "South American Championships",
+                        "Asunci\u00f3n, Paraguay",
+                        "5th",
+                        "Shot put",
+                        "13.89 m"
+                    ],
+                    [
+                        "2018",
+                        "South American Games",
+                        "Cochabamba, Bolivia",
+                        "3rd",
+                        "Heptathlon",
+                        "5503 pts"
+                    ],
+                    [
+                        "2018",
+                        "Ibero-American Championships",
+                        "Trujillo, Peru",
+                        "1st",
+                        "Heptathlon",
+                        "5879 pts"
+                    ]
+                ],
+                "page_title": "Ana Camila Pirelli"
+            },
+            "question": "Did Ana Camila Pirelli win early in her career representing Paraguay?",
+            "answer": "In her third competition representing Paraguay, Ana Camila Pirelli won 1st place in the Heptathlon at the South American Youth Championships at Caracas, Venezuela."
+        }
+    },
+    "7": {
+        "generations": [
+            "1. Plan:\n a. Identify the rows where the 'year' is 2008.\n b. Extract the 'role' column for those specific rows to answer the question.\n2. Retrieval:\nExplanation: The 'year' column is necessary to filter the rows to the specific year in question, 2008. The 'role' column will provide the names of the roles played by Robert Boulter in that year.\nEvidence: f_col([year, role])"
+        ],
+        "cols": [
+            "year",
+            "role"
+        ],
+        "ori_data_item": {
+            "id": 2597,
+            "table": {
+                "id": 2597,
+                "header": [
+                    "Year",
+                    "Title",
+                    "Role",
+                    "Notes"
+                ],
+                "rows": [
+                    [
+                        "2000",
+                        "The Bill",
+                        "Scott Parry",
+                        "Episode: \"In Safe Hands\""
+                    ],
+                    [
+                        "2002",
+                        "Judge John Deed",
+                        "Addem Armitage",
+                        "Episode: \"Political Expediency\""
+                    ],
+                    [
+                        "2002",
+                        "The Bill",
+                        "Toby Steele",
+                        "Episode: \"018\""
+                    ],
+                    [
+                        "2003",
+                        "The Bill",
+                        "Connor Price",
+                        "Episodes: \"151\", \"152\""
+                    ],
+                    [
+                        "2004",
+                        "The Long Firm",
+                        "Craig",
+                        "Episode: \"Teddy's Story\""
+                    ],
+                    [
+                        "2006",
+                        "Doctors",
+                        "Jason Tyler",
+                        "Episode: \"Something I Ate\""
+                    ],
+                    [
+                        "2008",
+                        "Waking the Dead",
+                        "Jimmy Dearden",
+                        "Episodes: \"Wounds: Part 1\", \"Wounds: Part 2\""
+                    ],
+                    [
+                        "2008",
+                        "Survivors",
+                        "Neil",
+                        "Episode: #1.1"
+                    ],
+                    [
+                        "2010",
+                        "Casualty",
+                        "Kieron Fletcher",
+                        "Episodes: #24.26 \u2014 24.35"
+                    ],
+                    [
+                        "2014",
+                        "Suspects",
+                        "Kirk Hawthorne",
+                        "Episode: 1.2"
+                    ],
+                    [
+                        "2014",
+                        "Father Brown",
+                        "Alan Archer",
+                        "Episode: 2.3 \"The Pride of the Prydes\""
+                    ]
+                ],
+                "page_title": "Robert Boulter"
+            },
+            "question": "Which role did Boulter play in 2008?",
+            "answer": "In 2008, Boulter starred as the character \"Jimmy Dearden\" in the two-part episode \"Wounds\" of the television series Waking the Dead."
+        }
+    },
+    "12": {
+        "generations": [
+            "1. Plan:\n   a. Identify the rows where the 'award' column contains \"24th hong kong film awards\".\n   b. For those rows, extract the 'category' and 'nominated work' columns to answer the question"
+        ],
+        "cols": [],
+        "ori_data_item": {
+            "id": 21232,
+            "table": {
+                "id": 21232,
+                "header": [
+                    "Year",
+                    "Award",
+                    "Category",
+                    "Nominated work",
+                    "Result"
+                ],
+                "rows": [
+                    [
+                        "1998",
+                        "18th Hong Kong Film Awards",
+                        "Best New Performer",
+                        "City of Glass",
+                        "Nominated"
+                    ],
+                    [
+                        "2003",
+                        "40th Golden Horse Awards",
+                        "Best Leading Actor",
+                        "Night Corridor",
+                        "Nominated"
+                    ],
+                    [
+                        "2004",
+                        "41st Golden Horse Awards",
+                        "Best Supporting Actor",
+                        "New Police Story",
+                        "Won"
+                    ],
+                    [
+                        "2005",
+                        "24th Hong Kong Film Awards",
+                        "Best Actor",
+                        "One Nite in Mongkok",
+                        "Nominated"
+                    ],
+                    [
+                        "2005",
+                        "24th Hong Kong Film Awards",
+                        "Best Supporting Actor",
+                        "New Police Story",
+                        "Nominated"
+                    ],
+                    [
+                        "2005",
+                        "Golden Rooster Awards",
+                        "Best Supporting Actor",
+                        "New Police Story",
+                        "Nominated"
+                    ],
+                    [
+                        "2005",
+                        "Golden Bauhinia Awards",
+                        "Best Actor",
+                        "One Nite in Mongkok",
+                        "Nominated"
+                    ],
+                    [
+                        "2005",
+                        "Golden Bauhinia Awards",
+                        "Best Supporting Actor",
+                        "New Police Story",
+                        "Nominated"
+                    ],
+                    [
+                        "2007",
+                        "26th Hong Kong Film Awards",
+                        "Best New Director",
+                        "The Heavenly Kings",
+                        "Won"
+                    ],
+                    [
+                        "2007",
+                        "7th Chinese Film Media Awards",
+                        "Best New Director",
+                        "The Heavenly Kings",
+                        "Won"
+                    ],
+                    [
+                        "2007",
+                        "Hong Kong Film Critics Society Awards",
+                        "Best Director",
+                        "The Heavenly Kings",
+                        "Nominated"
+                    ],
+                    [
+                        "2007",
+                        "Hong Kong Film Critics Society Awards",
+                        "Best Screenplay",
+                        "The Heavenly Kings",
+                        "Nominated"
+                    ],
+                    [
+                        "2009",
+                        "46th Golden Horse Awards",
+                        "Best Leading Actor",
+                        "Like A Dream",
+                        "Nominated"
+                    ],
+                    [
+                        "2014",
+                        "6th Macau International Movie Festival",
+                        "Best Actor",
+                        "That Demon Within",
+                        "Nominated"
+                    ],
+                    [
+                        "2015",
+                        "34th Hong Kong Film Awards",
+                        "Best Actor",
+                        "That Demon Within",
+                        "Nominated"
+                    ]
+                ],
+                "page_title": "Daniel Wu"
+            },
+            "question": "During the 24th Hong Kong Film Awards, what awards were Daniel Wu nominated for, and for which roles did he earn those nominations, respectively?",
+            "answer": "In 2005, Wu was nominated as best actor at the 24th Hong Kong Film Awards for his role in One Nite in Mongkok, and as best supporting actor for New Police Story."
+        }
+    },
+    "3": {
+        "generations": [
+            "1. Plan:\n   a. Identify the 'tasmania' column as it contains the information about the players and their scores.\n   \n2. Retrieval:\n   Explanation: The 'tasmania' column contains the data about the players from Tasmania and their scores in the match, which is essential to answer the question about who played and what they were out for.\n   Evidence: f_col([tasmania])"
+        ],
+        "cols": [
+            "tasmania"
+        ],
+        "ori_data_item": {
+            "id": 8326,
+            "table": {
+                "id": 8326,
+                "header": [
+                    "MCC",
+                    "v",
+                    "Tasmania"
+                ],
+                "rows": [
+                    [
+                        "316/4 (dec) J.H. Hampshire 156* J.H. Edrich 52 B.C. Patterson 2/80 & 3 Ct",
+                        "-",
+                        "164 P.G. Roberts 77 P. Lever 4/17 D. Wilson 3/32"
+                    ],
+                    [
+                        "72/1 J.H. Edrich 42*",
+                        "-",
+                        "223 (follow-on) K. Ibadulla (c) 51 D.L. Underwood 3/39"
+                    ]
+                ],
+                "page_title": "MCC tour of Australia in 1970\u201371"
+            },
+            "question": "Who did Tasmania have in the MCC tour of Australia in 1970\u201371 and what were they out for?",
+            "answer": "Tasmania had Ibadulla (51) and Underwood (3/39) and were out for 223."
+        }
+    },
+    "8": {
+        "generations": [
+            "1. Plan:\n   a. Filter the rows where the 'year' column has the value 2007.\n   b. Extract the 'role' column to find out the roles he played in that year.\n2. Retrieval:\nExplanation: The 'year' column is used to filter the rows to only those in 2007, as the question asks about roles played in that specific year. The 'role' column contains the information about the roles he played in the movies.\nEvidence: f_col([year, role])"
+        ],
+        "cols": [
+            "title",
+            "year",
+            "role"
+        ],
+        "ori_data_item": {
+            "id": 10051,
+            "table": {
+                "id": 10051,
+                "header": [
+                    "Year",
+                    "Title",
+                    "Role",
+                    "Notes"
+                ],
+                "rows": [
+                    [
+                        "1997",
+                        "Pleasant Grove",
+                        "Bedford",
+                        "Short film"
+                    ],
+                    [
+                        "1998",
+                        "Physical Pinball",
+                        "-",
+                        "Short film"
+                    ],
+                    [
+                        "2000",
+                        "George Washington",
+                        "Rico Rice",
+                        "-"
+                    ],
+                    [
+                        "2003",
+                        "Security, Colorado",
+                        "Paul",
+                        "Filmed in the Dogme 95 style."
+                    ],
+                    [
+                        "2003",
+                        "All the Real Girls",
+                        "Paul",
+                        "Writer"
+                    ],
+                    [
+                        "2003",
+                        "Crude",
+                        "Gabe",
+                        "-"
+                    ],
+                    [
+                        "2004",
+                        "50 Ways to Leave Your Lover",
+                        "Owen McCabe",
+                        "-"
+                    ],
+                    [
+                        "2005",
+                        "Elizabethtown",
+                        "Jesse Baylor",
+                        "-"
+                    ],
+                    [
+                        "2005",
+                        "The Family Stone",
+                        "Brad Stevenson",
+                        "-"
+                    ],
+                    [
+                        "2006",
+                        "Live Free or Die",
+                        "Jeff Lagrand",
+                        "-"
+                    ],
+                    [
+                        "2007",
+                        "The Assassination of Jesse James by the Coward Robert Ford",
+                        "Dick Liddil",
+                        "-"
+                    ],
+                    [
+                        "2007",
+                        "Lars and the Real Girl",
+                        "Gus",
+                        "-"
+                    ],
+                    [
+                        "2008",
+                        "Pretty Bird",
+                        "Beach Dog Jogger",
+                        "Writer, director"
+                    ],
+                    [
+                        "2009",
+                        "Bright Star",
+                        "Charles Armitage Brown",
+                        "-"
+                    ],
+                    [
+                        "2009",
+                        "Away We Go",
+                        "Courtney Farlander",
+                        "-"
+                    ],
+                    [
+                        "2011",
+                        "Water for Elephants",
+                        "Charlie O'Brien",
+                        "-"
+                    ],
+                    [
+                        "2011",
+                        "The Beloved",
+                        "Henderson",
+                        "-"
+                    ],
+                    [
+                        "2012",
+                        "Flowers of War",
+                        "Terry",
+                        "-"
+                    ],
+                    [
+                        "2012",
+                        "The Babymakers",
+                        "Tommy Macklin",
+                        "-"
+                    ],
+                    [
+                        "2013",
+                        "Hello Carter",
+                        "Aaron",
+                        "-"
+                    ],
+                    [
+                        "2014",
+                        "Goodbye to All That",
+                        "Otto Wall",
+                        "-"
+                    ],
+                    [
+                        "2014",
+                        "Black Eyed Dog",
+                        "-",
+                        "-"
+                    ],
+                    [
+                        "2014",
+                        "Straight Men/Same Bed",
+                        "-",
+                        "Short film Writer, director, producer"
+                    ],
+                    [
+                        "2015",
+                        "The Daughter",
+                        "Christian",
+                        "-"
+                    ],
+                    [
+                        "2016",
+                        "Caf\u00e9 Society",
+                        "Steve",
+                        "-"
+                    ],
+                    [
+                        "2016",
+                        "Rules Don't Apply",
+                        "Richard Miskin",
+                        "-"
+                    ],
+                    [
+                        "TBA",
+                        "The Sound of Philadelphia",
+                        "-",
+                        "Filming"
+                    ]
+                ],
+                "page_title": "Paul Schneider (actor)"
+            },
+            "question": "What roles did Paul Schneider play in 2007?",
+            "answer": "In 2007, Paul Schneider portrayed Gus in Lars and the Real Girl and Dick Liddil in The Assassination of Jesse James by the Coward Robert Ford."
+        }
+    },
+    "13": {
+        "generations": [
+            "1. Plan:\n   a. Extract the 'year' and 'role' columns to identify the year Lucie Jones appeared in \"Like Me\" and the role she played.\n2. Retrieval:\nExplanation: The 'year' column provides the year of the performance, and the 'role' column specifies the role played by Lucie Jones. The 'title' column is necessary to identify the specific show \"Like Me\".\nEvidence: f_col([year, title, role])"
+        ],
+        "cols": [
+            "year",
+            "role"
+        ],
+        "ori_data_item": {
+            "id": 21420,
+            "table": {
+                "id": 21420,
+                "header": [
+                    "Year",
+                    "Title",
+                    "Role"
+                ],
+                "rows": [
+                    [
+                        "2010",
+                        "Les Mis\u00e9rables",
+                        "Cosette"
+                    ],
+                    [
+                        "2011",
+                        "The Prodigals",
+                        "Kelly"
+                    ],
+                    [
+                        "2013",
+                        "We Will Rock You",
+                        "Meat"
+                    ],
+                    [
+                        "2013\u201314",
+                        "American Psycho",
+                        "Victoria"
+                    ],
+                    [
+                        "2015",
+                        "Broadway to the Bay",
+                        "-"
+                    ],
+                    [
+                        "2015",
+                        "Like Me",
+                        "Emma"
+                    ],
+                    [
+                        "2015",
+                        "Ghost the Musical",
+                        "Molly"
+                    ],
+                    [
+                        "2016",
+                        "Legally Blonde",
+                        "Elle Woods"
+                    ],
+                    [
+                        "2016",
+                        "Musicals Unsung",
+                        "-"
+                    ],
+                    [
+                        "2016\u201317",
+                        "Rent",
+                        "Maureen Johnson"
+                    ],
+                    [
+                        "2017",
+                        "The Wedding Singer",
+                        "Holly"
+                    ],
+                    [
+                        "2017\u201318",
+                        "Legally Blonde",
+                        "Elle Woods"
+                    ],
+                    [
+                        "2017",
+                        "A Christmas Carol",
+                        "Emily/Ghost of Christmas Future"
+                    ]
+                ],
+                "page_title": "Lucie Jones"
+            },
+            "question": "What year did Lucie Jones appear in Like Me and which role did she play?",
+            "answer": "In 2015, Lucie Jones played the role of Emma in Like Me."
+        }
+    },
+    "4": {
+        "generations": [
+            "1. Plan:\n   a. Extract the 'location' and 'arena' columns to identify the venues of the events.\n   b. Check if the 'arena' column contains any non-arena locations to answer the question.\n2. Retrieval:\nExplanation: The 'arena' column identifies the specific venue where each event took place, and the 'location' column provides the city and country of each event. By examining the 'arena' column, we can determine if all events were held in arenas.\nEvidence: f_col([arena, location])"
+        ],
+        "cols": [
+            "arena",
+            "event title",
+            "location"
+        ],
+        "ori_data_item": {
+            "id": 1629,
+            "table": {
+                "id": 1629,
+                "header": [
+                    "#",
+                    "Event Title",
+                    "Date",
+                    "Arena",
+                    "Location"
+                ],
+                "rows": [
+                    [
+                        "1",
+                        "KSW 18: Unfinished Sympathy",
+                        "February 25, 2012",
+                        "Orlen Arena",
+                        "Poland P\u0142ock, Poland"
+                    ],
+                    [
+                        "2",
+                        "KSW 19: Pudzianowski vs. Sapp",
+                        "May 12, 2012",
+                        "Arena \u0141\u00f3d\u017a",
+                        "Poland \u0141\u00f3d\u017a, Poland"
+                    ],
+                    [
+                        "3",
+                        "KSW 20: Fighting Symphonies",
+                        "September 15, 2012",
+                        "Ergo Arena",
+                        "Poland Gda\u0144sk, Poland"
+                    ],
+                    [
+                        "4",
+                        "KSW 21: Ultimate Explanation",
+                        "December 1, 2012",
+                        "Hala Torwar",
+                        "Poland Warsaw, Poland"
+                    ]
+                ],
+                "page_title": "2012 in Konfrontacja Sztuk Walki events"
+            },
+            "question": "Were any KSW events in 2012 not held in arenas?",
+            "answer": "KSW 21: Ultimate Explanation was held in Hala Torwar in Warsaw, Poland."
+        }
+    },
+    "9": {
+        "generations": [
+            "1. Plan:\n   a. Filter the rows based on the 'year' column to include only those from the year 2008.\n   b. Extract the 'role' column to identify the roles played in 2008.\n2. Retrieval:\nExplanation: The 'year' column is used to filter the rows to only include those from 2008, as per the question. The 'role' column provides the specific roles played by Dourif in the selected year.\nEvidence: f_col([year, role])"
+        ],
+        "cols": [
+            "year",
+            "role"
+        ],
+        "ori_data_item": {
+            "id": 11678,
+            "table": {
+                "id": 11678,
+                "header": [
+                    "Year",
+                    "Title",
+                    "Role",
+                    "Other notes"
+                ],
+                "rows": [
+                    [
+                        "2005",
+                        "Deadwood",
+                        "Chez Ami Whore",
+                        "TV series/3 episodes"
+                    ],
+                    [
+                        "2006",
+                        "Thief",
+                        "Alice",
+                        "TV series/4 episodes"
+                    ],
+                    [
+                        "2006",
+                        "Little Chenier",
+                        "Jo Jo",
+                        "-"
+                    ],
+                    [
+                        "2007",
+                        "The Lucky One",
+                        "Susan",
+                        "Short film"
+                    ],
+                    [
+                        "2008",
+                        "Garden Party",
+                        "Becky",
+                        "-"
+                    ],
+                    [
+                        "2008",
+                        "Frank the Rat",
+                        "Lisa",
+                        "-"
+                    ],
+                    [
+                        "2008",
+                        "Law & Order: Special Victims Unit",
+                        "Detective Nikki Breslin",
+                        "Episode: \"Swing\""
+                    ],
+                    [
+                        "2009",
+                        "The Messenger",
+                        "Returning Soldier's Wife",
+                        "-"
+                    ],
+                    [
+                        "2009",
+                        "Bored to Death",
+                        "Lisa Klein",
+                        "Episode: \"Stockholm Syndrome\""
+                    ],
+                    [
+                        "2010",
+                        "Mafiosa",
+                        "Sam",
+                        "-"
+                    ],
+                    [
+                        "2010",
+                        "After the Fall",
+                        "Annie Tolgen",
+                        "TV movie"
+                    ],
+                    [
+                        "2011",
+                        "Letters from the Big Man",
+                        "Penny",
+                        "-"
+                    ],
+                    [
+                        "2011",
+                        "True Blood",
+                        "Casey",
+                        "TV series/8 episodes"
+                    ],
+                    [
+                        "2011",
+                        "The Protector",
+                        "Tamara O'Neil",
+                        "Episode: \"Safe\""
+                    ],
+                    [
+                        "2012",
+                        "This is Caroline",
+                        "Fiona (voice)",
+                        "Short film"
+                    ],
+                    [
+                        "2012",
+                        "Cold Living",
+                        "Moira",
+                        "Short film"
+                    ],
+                    [
+                        "2012",
+                        "The Master",
+                        "Dancer",
+                        "-"
+                    ],
+                    [
+                        "2013",
+                        "Curse of Chucky",
+                        "Nica Pierce",
+                        "-"
+                    ],
+                    [
+                        "2014",
+                        "Gutshot Straight",
+                        "Gina",
+                        "-"
+                    ],
+                    [
+                        "2014",
+                        "Dangerous Words from the Fearless",
+                        "Ruth",
+                        "-"
+                    ],
+                    [
+                        "2014",
+                        "Precious Mettle",
+                        "Judy",
+                        "-"
+                    ],
+                    [
+                        "2015",
+                        "Fear Clinic",
+                        "Sara",
+                        "-"
+                    ],
+                    [
+                        "2016\u20132017",
+                        "Dirk Gently's Holistic Detective Agency",
+                        "Bart Curlish",
+                        "Series regular, 15 episodes"
+                    ],
+                    [
+                        "2016",
+                        "Blood is Blood",
+                        "Brie",
+                        "Main character"
+                    ],
+                    [
+                        "2016",
+                        "Arbor Demon",
+                        "Dana",
+                        "Main character"
+                    ],
+                    [
+                        "2016",
+                        "Her Last Will",
+                        "Iona Cotton",
+                        "-"
+                    ],
+                    [
+                        "2017",
+                        "Cult of Chucky",
+                        "Nica Pierce",
+                        "-"
+                    ],
+                    [
+                        "2017",
+                        "When We Rise",
+                        "Young Diane",
+                        "-"
+                    ],
+                    [
+                        "2018",
+                        "Shameless",
+                        "Tabitha Youens",
+                        "-"
+                    ],
+                    [
+                        "2018",
+                        "The Blacklist",
+                        "Jennifer Reddington",
+                        "3 episodes (season 5)"
+                    ],
+                    [
+                        "2018",
+                        "The Purge",
+                        "Good Leader Tavis",
+                        "Season 1"
+                    ]
+                ],
+                "page_title": "Fiona Dourif"
+            },
+            "question": "What roles did Dourif portray in 2008?",
+            "answer": "In 2008, Dourif portrayed Becky in Garden Party and Lisa in Frank the Rat."
+        }
+    },
+    "14": {
+        "generations": [
+            "1. Plan:\n a. Identify rows with 'picture dimensions (px \u00d7 px)' that include 480 or 576.\n b. Extract 'par (decimal)' values for those rows as it is the pixel aspect ratio in decimal form.\n2. Retrieval:\nExplanation: The 'picture dimensions (px \u00d7 px)' column contains the information needed to filter the rows based on the dimensions 480 and 576. The 'par (decimal)' column provides the pixel aspect ratio for the selected rows.\nEvidence: f_col([picture dimensions (px \u00d7 px), par (decimal)])"
+        ],
+        "cols": [
+            "picture dimensions (px \u00d7 px)",
+            "par (decimal)",
+            "par (decimal)_2"
+        ],
+        "ori_data_item": {
+            "id": 17606,
+            "table": {
+                "id": 17606,
+                "header": [
+                    "Video system",
+                    "DAR",
+                    "Picture dimensions (px \u00d7 px)",
+                    "PAR",
+                    "PAR",
+                    "PAR (decimal)",
+                    "PAR (decimal)",
+                    "Width (px)",
+                    "Width (px)"
+                ],
+                "rows": [
+                    [
+                        "Video system",
+                        "DAR",
+                        "Picture dimensions (px \u00d7 px)",
+                        "Rec.601",
+                        "Digital",
+                        "Rec.601",
+                        "Digital",
+                        "Rec.601",
+                        "Digital"
+                    ],
+                    [
+                        "PAL",
+                        "4:3",
+                        "704\u00d7576",
+                        "59:54",
+                        "12:11",
+                        "1.0925",
+                        "1.09",
+                        "769, 385",
+                        "768, 384"
+                    ],
+                    [
+                        "PAL",
+                        "16:9",
+                        "704\u00d7576",
+                        "118:81",
+                        "16:11",
+                        "1.456790123",
+                        "1.45",
+                        "1026, 513",
+                        "1024, 512"
+                    ],
+                    [
+                        "PAL",
+                        "4:3",
+                        "720x576",
+                        "-",
+                        "16:15",
+                        "-",
+                        "1.06",
+                        "-",
+                        "768, 384"
+                    ],
+                    [
+                        "PAL",
+                        "16:9",
+                        "720x576",
+                        "-",
+                        "64:45",
+                        "-",
+                        "1.42",
+                        "-",
+                        "1024, 512"
+                    ],
+                    [
+                        "NTSC",
+                        "4:3",
+                        "704\u00d7480",
+                        "10:11",
+                        "10:11",
+                        "0.90",
+                        "0.90",
+                        "640, 320",
+                        "640, 320"
+                    ],
+                    [
+                        "NTSC",
+                        "16:9",
+                        "704\u00d7480",
+                        "40:33",
+                        "40:33",
+                        "1.21",
+                        "1.21",
+                        "853, 427",
+                        "853, 427"
+                    ],
+                    [
+                        "HDV / HDCAM",
+                        "16:9",
+                        "1440\u00d71080",
+                        "4:3",
+                        "4:3",
+                        "1.3",
+                        "1.3",
+                        "1920",
+                        "1920"
+                    ]
+                ],
+                "page_title": "Pixel aspect ratio"
+            },
+            "question": "What is the pixel aspect ratio for the 480 and 576?",
+            "answer": "The pixel aspect ratio for 480 is 10:11 and for 576 is 59:54."
+        }
+    }
+}
